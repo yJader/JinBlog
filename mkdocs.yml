@@ -36,26 +36,25 @@ nav:
       - 汇编&接口:
           - "汇编&接口": fzu_cs_course\汇编&接口\汇编&接口.md
           - "汇编模板": fzu_cs_course\汇编&接口\汇编模板.md
+  - 后端开发:
+      - Java:
+          - "java类基础": backend/java/java类基础.md
+          - "继承封装多态": backend/java/继承封装多态.md
+          - "10面向对象高级": backend/java/10面向对象高级.md
+          - "11枚举和注解": backend/java/11枚举和注解.md
+          - "13常用类": backend/java/13常用类.md
+          - "14集合": backend/java/14集合.md
+          - "15泛型": backend/java/15泛型.md
+          - "16坦克大战_part1": backend/java/16坦克大战_part1.md
+          - "17多线程基础": backend/java/17多线程基础.md
+          - "18坦克大战_part2": backend/java/18坦克大战_part2.md
+          - "19IO流": backend/java/19IO流.md
+          - "20网络编程": backend/java/20网络编程.md
+          - "21反射与动态代理": backend/java/21反射与动态代理.md
+          - "22Java8新特性": backend/java/22Java8新特性.md
+          - "杂项": backend/java/杂项.md
   - 博客随笔:
       - blog/index.md
-
-  # - 学习路线:
-  #     - guide/README.md
-  #     - git学习:
-  #         - "说在前面": guide/git/before.md
-  #         - "基础篇": guide/git/basic.md
-  #         - "lab1": guide/git/pr.md
-  #         - "git常用操作": guide/git/ops.md
-  #     - 移动开发学习:
-  #         - "大概": guide/mobile/README.md
-  #     - 前端开发学习:
-  #         - "大概": guide/front-end/Front-end.md
-  #     - 后端开发学习:
-  #         - "入门基础": guide/back-end/Back-end.md
-  # - 计算机内功:
-  #     - cs-internal/README.md
-  # - 技术博客:
-  #     - blog/index.md
 
 theme:
   font:
