@@ -1,19 +1,17 @@
-
-
-# Java 8新特性汇总
+# Java 8 新特性汇总
 
 <img src="E:\Work\JAVA\javase 尚硅谷\1_课件\第2部分：Java高级编程\尚硅谷_宋红康_第16章_Java8的其它新特性\Java 8新特性 尚硅谷-宋红康.bmp" alt="Java 8新特性 尚硅谷-宋红康" style="zoom: 67%;" />
 
-**Java 8的改进**
+**Java 8 的改进**
 
 - 速度更快
-- 代码更少（增加了新的语法：[Lambda表达式](#一、Lambda 表达式)）
+- 代码更少（增加了新的语法：[Lambda 表达式](#一、Lambda 表达式)）
 - 引入强大的 [Stream APl](# 五、StreamAPI)
 - 便于并行
   - <font color='#66ccff'>并行流</font>就是把一个内容分成多个数据块，并用不同的线程分别处理每个数据块的流。相比较串行的流，并行的流可以很大程度上提高程序的执行效率。
-  - Java 8中将并行进行了优化，我们可以很容易的对数据进行并行操作。`Stream API` 可以声明性地通过 `parallel()` 与 `sequential()` 在并行流与顺序流之间进行切换
+  - Java 8 中将并行进行了优化，我们可以很容易的对数据进行并行操作。`Stream API` 可以声明性地通过 `parallel()` 与 `sequential()` 在并行流与顺序流之间进行切换
 - 最大化减少空指针异常：`Optional`
-- `Nashorn` 引擎，允许在JVM上运行 `JS` 应用(Rhino引擎的重写)
+- `Nashorn` 引擎，允许在 JVM 上运行 `JS` 应用(Rhino 引擎的重写)
 
 # 一、Lambda 表达式
 
@@ -44,7 +42,7 @@ public void test1(){
 }
 ```
 
-**示例二**：使用Comparator接口
+**示例二**：使用 Comparator 接口
 
 ```java
 @Test
@@ -78,9 +76,9 @@ public void test2(){
 
 ```
 
-### 3. 怎样使用Lambda表达式
+### 3. 怎样使用 Lambda 表达式
 
-#### 3.1 Lamdba表达式基本语法
+#### 3.1 Lamdba 表达式基本语法
 
 1.举例： `(o1,o2) -> Integer.compare(o1,o2);`
 
@@ -90,7 +88,7 @@ public void test2(){
 - `->左边` ：lambda ==形参列表== （其实就是接口中的抽象方法的形参列表）
 - `->右边` ：lambda 体（其实就是重写的抽象方法的方法体）
 
-#### 3.2 Lamdba表达式使用（包含六种情况）
+#### 3.2 Lamdba 表达式使用（包含六种情况）
 
 **3.2.1 语法格式一：无参，无返回值**
 
@@ -98,7 +96,7 @@ public void test2(){
 Runnable r1 = () -> {System.out.println(“hello Lamdba!”)}
 ```
 
-**3.2.2 语法格式二：Lamdba需要一个参数，但没有返回值**
+**3.2.2 语法格式二：Lamdba 需要一个参数，但没有返回值**
 
 ```java
 Consumer<String> con = (String str) -> {System.out.println(str)}
@@ -114,13 +112,13 @@ ArrayList<String> list = new ArrayList<>();//类型推断，用左边推断右�
 int[] arr = {1,2,3,4};//类型推断，用左边推断右边
 ```
 
-**3.2.4 语法格式四：Lamdba若只需要一个参数时，小括号可以省略**
+**3.2.4 语法格式四：Lamdba 若只需要一个参数时，小括号可以省略**
 
 ```java
 Consumer<String> con = str -> {System.out.println(str)}
 ```
 
-**3.2.5 语法格式五：Lamdba需要两个以上的参数，多条执行语句，并且可以有返回值**
+**3.2.5 语法格式五：Lamdba 需要两个以上的参数，多条执行语句，并且可以有返回值**
 
 ```java
 Comparator<Integer>com = (o1,o1) -> {
@@ -129,7 +127,7 @@ Comparator<Integer>com = (o1,o1) -> {
 }
 ```
 
-**3.2.6 语法格式六：当Lamdba体只有一条语句时，==可以省略return和大括号==**
+**3.2.6 语法格式六：当 Lamdba 体只有一条语句时，==可以省略 return 和大括号==**
 
 ```java
 Comparator<Integer>com = (o1,o1) ->	Integer.compare(o1,o2);
@@ -151,7 +149,7 @@ public class LamdbaTest {
         };
         r1.run();
         System.out.println("====================");
-        
+
         //使用Lambda表达式
         Runnable r2 = () -> {
             System.out.println("Hi Lamdba");
@@ -288,7 +286,7 @@ public class LamdbaTest {
 - `->` 左边：lambda 形参列表的参数类型可以省略(类型推断)；如果 lambda 形参列表只有一个参数，其一对 `()` 也可以省略
 - `->` 右边：lambda 体应该使用一对 `{}` 包裹；如果 lambda 体只有一条执行语句（可能是 `return` 语句），省略这一对 `{}` 和 `return` 关键字
 
-### 4. Lamdba表达式总结
+### 4. Lamdba 表达式总结
 
 - Lambda 表达式的本质：==作为函数式接口的实例==
 - 如果一个接口中，只声明了一个抽象方法，则此接口就称为<font color='#66ccff'>函数式接口</font>。我们可以在一个接口上使用`@FunctionalInterface` 注解，这样做可以检查它是否是一个函数式接口。
@@ -298,10 +296,10 @@ public class LamdbaTest {
 
 ### 1. 如何理解函数式接口
 
-* Java 从诞生日起就是一直倡导“一切皆对象”， 在 Java 里面面向对象 (编程是一切。但是随着 python 、 scala 等语言的兴起和新技术的挑战 Java 不得不做出调整以便支持更加广泛的技术要求，也即 java 不但可以支持 OOP 还可以支持 <font color='#66ccff'>OOF （面向函数编程）</font> 
-* 在函数式编程语言当中，函数被当做一等公民对待。在将函数作为一等公民的编程语言中， Lambda 表达式的类型是函数。但是在 Java8 中，有所不同。在Java8 中， Lambda 表达式是对象，而不是函数，它们必须依附于一类特别的对象类型 ---- **函数式接口** 。
-* 简单的说，在 Java8 中， **Lambda 表达式就是一个函数式接口的实例**。 这就是Lambda 表达式和函数式接口的关系。也就是说，只要一个对象是函数式接口的实例，那么该对象就可以用 Lambda 表达式来表示。
-* 所以以前用 **匿名实现类 表示的现在都可以用 Lambda 表达式来写**。
+- Java 从诞生日起就是一直倡导“一切皆对象”， 在 Java 里面面向对象 (编程是一切。但是随着 python 、 scala 等语言的兴起和新技术的挑战 Java 不得不做出调整以便支持更加广泛的技术要求，也即 java 不但可以支持 OOP 还可以支持 <font color='#66ccff'>OOF （面向函数编程）</font>
+- 在函数式编程语言当中，函数被当做一等公民对待。在将函数作为一等公民的编程语言中， Lambda 表达式的类型是函数。但是在 Java8 中，有所不同。在 Java8 中， Lambda 表达式是对象，而不是函数，它们必须依附于一类特别的对象类型 ---- **函数式接口** 。
+- 简单的说，在 Java8 中， **Lambda 表达式就是一个函数式接口的实例**。 这就是 Lambda 表达式和函数式接口的关系。也就是说，只要一个对象是函数式接口的实例，那么该对象就可以用 Lambda 表达式来表示。
+- 所以以前用 **匿名实现类 表示的现在都可以用 Lambda 表达式来写**。
 
 ### 2. 函数式接口概述
 
@@ -309,7 +307,7 @@ public class LamdbaTest {
 - 可以通过 Lambda 表达式来创建该接口的对象。（若 Lambda 表达式抛出一个受检异常（即：非运行时异常），那么该异常需要在目标接口的抽象方法上进行声明）
 - 可以在一个接口上使用 `@FunctionalInterface` 注解，这样做可以检查它是否是一个函数式接口。同时 `javadoc` 也会包含一条声明，说明这个接口是一个函数式接口
 - Lambda 表达式的本质：作为函数式接口的实例
-- 在 `java.util.function` 包下定义了Java 8的丰富的函数式接口
+- 在 `java.util.function` 包下定义了 Java 8 的丰富的函数式接口
 
 **自定义函数式接口**
 
@@ -320,11 +318,11 @@ public interface MyInterface {
 }
 ```
 
-### 3. Java内置函数式接口
+### 3. Java 内置函数式接口
 
 #### 3.1 四大核心函数式接口
 
-![四大核心函数式接口](E:\Work\MyNote\java基础\media\四大核心函数式接口.png)
+![四大核心函数式接口](media/四大核心函数式接口.png)
 
 **应用举例**
 
@@ -411,17 +409,17 @@ public class LambdaTest3 {
 
 #### 3.2 其他函数式接口
 
-![其他函数式接口](E:\Work\MyNote\java基础\media\其他函数式接口.png)
+![其他函数式接口](media/其他函数式接口.png)
 
 ### 4. 使用总结
 
-**4.1 何时使用lambda表达式？**
+**4.1 何时使用 lambda 表达式？**
 
 当需要对一个==函数式接口实例化==的时候，可以使用 lambda 表达式。
 
 **4.2 何时使用给定的函数式接口？**
 
-如果我们开发中需要定义一个函数式接口，首先看看在已有的jdk提供的函数式接口是否提供了能满足需求的函数式接口。如果有，则直接调用即可，不需要自己再自定义了。
+如果我们开发中需要定义一个函数式接口，首先看看在已有的 jdk 提供的函数式接口是否提供了能满足需求的函数式接口。如果有，则直接调用即可，不需要自己再自定义了。
 
 # 三、方法的引用
 
@@ -429,7 +427,7 @@ public class LambdaTest3 {
 
 方法引用可以看做是 Lambda 表达式深层次的表达。换句话说，方法引用就是 Lambda 表达式，也就是函数式接口的一个实例，通过方法的名字来指向一个方法。
 
-###  2. 使用情景
+### 2. 使用情景
 
 当要传递给 Lambda 体的操作，已经实现的方法了，可以使用方法引用！
 
@@ -441,16 +439,17 @@ public class LambdaTest3 {
 
 ### 4. 使用情况
 
-- 情况1 对象 `::` 非静态方法
-- 情况2 类 `::` 静态方法
-- 情况3 类 `::` 非静态方法
+- 情况 1 对象 `::` 非静态方法
+- 情况 2 类 `::` 静态方法
+- 情况 3 类 `::` 非静态方法
 
 ### 5. 使用要求
 
-- 要求接口中的抽象方法的形参列表和返回值类型 与 方法引用的方法的形参列表和返回值 ==类型相同==（针对于情况1和情况2）
+- 要求接口中的抽象方法的形参列表和返回值类型 与 方法引用的方法的形参列表和返回值 ==类型相同==（针对于情况 1 和情况 2）
+
   - <font color='orange'>理解: 方法作用完全一致, 可以直接用方法引用抄过来</font>
 
-- 当函数式接口方法的第一个参数是需要==引用方法的调用者==，并且第二个参数是需要==引用方法的参数==(或无参数)时：`ClassName::methodName`（针对于情况3）
+- 当函数式接口方法的第一个参数是需要==引用方法的调用者==，并且第二个参数是需要==引用方法的参数==(或无参数)时：`ClassName::methodName`（针对于情况 3）
 
 ### 6. 使用建议
 
@@ -460,7 +459,7 @@ public class LambdaTest3 {
 
 ```java
 public class MethodReferenceTest {
-    
+
     // 情况一：对象 :: 实例方法
     //Consumer中的void accept(T t)
     //PrintStream中的void println(T t)
@@ -618,7 +617,7 @@ public void test1() {
         }
     };
     System.out.println(sup.get());
-    
+
     //使用Lambda表达式
     System.out.println("====================");
     Supplier<Employee> sup1 = () -> new Employee(1001, "Tom", 43, 13333);
@@ -683,11 +682,11 @@ public void test4() {
 
 # 五、StreamAPI
 
-### 1. Stream API概述
+### 1. Stream API 概述
 
-- Stream和Collection集合的区别: `Stream` 关注的是对数据的运算，与 `CPU` 打交道; 集合关注的是数据的存储，与内存打交道
+- Stream 和 Collection 集合的区别: `Stream` 关注的是对数据的运算，与 `CPU` 打交道; 集合关注的是数据的存储，与内存打交道
 - Java 8 提供了一套 `Stream API(java.util.stream)` ，使用这套 `api` 可以对内存中的数据进行过滤、排序、映射、归约等操作。类似于 `sql` 对数据库中表的相关操作。
-- `Stream` 是数据渠道，用于操作数据源（集合、数组等）所生成的元素序列。**“集合讲的是数据， Stream讲的是计算！”**
+- `Stream` 是数据渠道，用于操作数据源（集合、数组等）所生成的元素序列。**“集合讲的是数据， Stream 讲的是计算！”**
 
 **使用注意点:**
 
@@ -695,20 +694,23 @@ public void test4() {
 
 ② `Stream` 不会改变源对象。相反，他们会返回一个持有结果的新 `Stream`。
 
-③ `Stream` 操作是延迟执行的。这意味着他们会等到需要结果的时候才执行。 
+③ `Stream` 操作是延迟执行的。这意味着他们会等到需要结果的时候才执行。
 
 ### 2. Stream 使用流程
 
-1. Stream 的实例化 : 
-   * 一个数据源(如: 集合, 数组), 获取一个流
+1. Stream 的实例化 :
 
-2. 一系列的中间操作（过滤、映射、...) : 
-   * 一个中间操作链, 对数据源的数据进行处理
+   - 一个数据源(如: 集合, 数组), 获取一个流
+
+2. 一系列的中间操作（过滤、映射、...) :
+
+   - 一个中间操作链, 对数据源的数据进行处理
 
 3. 终止操作 :
-   * 一旦终止操作, 就执行中间操作链, 并产生结果, 之后, 不会再被使用
-   
-     ![Stream使用流程](media\Stream使用流程.png)
+
+   - 一旦终止操作, 就执行中间操作链, 并产生结果, 之后, 不会再被使用
+
+     ![Stream使用流程](media/Stream使用流程.png)
 
 ### 3. 使用方法
 
@@ -716,14 +718,14 @@ public void test4() {
 
 **3.1.1 创建方式一：通过集合**
 
-Java 8的 `Collection` 接口被扩展，提供了两个获取流的方法：
+Java 8 的 `Collection` 接口被扩展，提供了两个获取流的方法：
 
 - `default Stream<E> stream()` : 返回一个顺序流
 - `default Stream<E> parallelStream()` : 返回一个并行流
 
 **3.1.2 创建方式二：通过数组**
 
-Java 8中的 `Arrays` 的静态方法 `stream()` 可以获取数组流
+Java 8 中的 `Arrays` 的静态方法 `stream()` 可以获取数组流
 
 - 调用 `Arrays` 类的 `static<T> Stream<T> stream(T[] array)`: 返回一个流
 - 重载形式，能够处理对应基本类型的数组：
@@ -731,9 +733,9 @@ Java 8中的 `Arrays` 的静态方法 `stream()` 可以获取数组流
   - `public static LongStream stream（long[] array）`
   - `public static DoubleStream stream（double[] array）`
 
-**3.1.3 创建方式三：通过Stream的of()方法**
+**3.1.3 创建方式三：通过 Stream 的 of()方法**
 
-可以调用Stream类静态方法of()，通过显示值创建一个流。可以用于接收任意数量的参数
+可以调用 Stream 类静态方法 of()，通过显示值创建一个流。可以用于接收任意数量的参数
 
 - `public static <T>Stream<T> of(T...values)`:返回一个流
 
@@ -1085,7 +1087,7 @@ public void test4(){
 - `Optional.empty()` : 创建一个空的 `Optional` 实例
 - `Optional.ofNullable(T t)`：`t` 可以为 `null`
 
-#### 2.2 判断Optional容器是否包含对象
+#### 2.2 判断 Optional 容器是否包含对象
 
 - `boolean isPresent()`：判断是否包含对象
 - `void ifPresent(Consumer<? super T> consumer)`：如果有值，就执行 `Consumer` 接口的实现代码，并且该值会作为参数传给它。
@@ -1280,7 +1282,7 @@ public class testReflection {
 
 ```
 
-**编译级别为JDK8时**
+**编译级别为 JDK8 时**
 
 ```txt
 java version is 1.8.0_201
@@ -1290,7 +1292,7 @@ java version is 1.8.0_201
 
 ```
 
-**编译级别为JDK7时**
+**编译级别为 JDK7 时**
 
 ```txt
 java version is 1.7
@@ -1298,4 +1300,3 @@ java version is 1.7
 循环十亿次为同一对象赋值所需的时间：3394
 循环十亿次反射创建对象所需的时间：293603
 ```
-
