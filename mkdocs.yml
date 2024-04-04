@@ -9,7 +9,7 @@ use_directory_urls: false # 不使用目录URL
 
 nav:
   - "Jin Blog": index.md
-  - "test": test/testBlog.md
+  # - "test": test/testBlog.md
   - FZU CS课程:
       - fzu_cs_course/README.md
       - 数字电路与逻辑设计:
@@ -36,6 +36,8 @@ nav:
       - 汇编&接口:
           - "汇编&接口": fzu_cs_course\汇编&接口\汇编&接口.md
           - "汇编模板": fzu_cs_course\汇编&接口\汇编模板.md
+  - 博客随笔:
+      - blog/index.md
 
   # - 学习路线:
   #     - guide/README.md
@@ -71,7 +73,7 @@ theme:
   language: zh
   palette:
     - media: "(prefers-color-scheme: light)"
-      primary: "teal"
+      primary: "indigo"
       scheme: default
       accent: "orange"
       toggle:
@@ -134,12 +136,14 @@ markdown_extensions:
       generic: true
   - toc: # 大纲
       permalink: true
+      baselevel: 2 # 将大纲的基本级别设置为2(#会变为<h2>)
   - def_list # 列表
   - pymdownx.tasklist:
       custom_checkbox: true
   - mdx_truly_sane_lists # 多级列表
   # - fenced_code
 
+# latex
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
@@ -151,10 +155,10 @@ plugins:
   #     repository: Fzu-SOSD-Lab/molihua
   #     branch: main
   #     enabled: !ENV [CI, false]
-  # - img2fig
   - blog:
       blog_toc: true
       post_excerpt: required
       archive: false
-      categories_name: 技术栈分类
+      categories_name: tags
       pagination_per_page: 5
+      post_url_format: "{slug}" # 博客url格式
