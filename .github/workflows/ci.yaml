@@ -22,7 +22,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
 
-      - run: pip install mkdocs-material 
+      - run: pip install mkdocs-material
+      - run: pip install mdx-truly-sane-lists
 #      - run: pip install mkdocs-git-committers-plugin-2
 
       - run: mkdocs gh-deploy --force
