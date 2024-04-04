@@ -5,20 +5,18 @@ site_description: "yJin's Blog"
 repo_name: yJader/JinBlog
 repo_url: https://github.com/yJader/JinBlog
 
+use_directory_urls: false # 不使用目录URL
+
 nav:
   - "Jin Blog": index.md
-  - 测试:
-      - 测试:
-          - "测试": 测试/测试/test.md
-          - "测试2": 测试/测试/index.md
+  - "test": test/testBlog.md
   - FZU CS课程:
       - fzu_cs_course/README.md
       - 数字电路与逻辑设计:
           - "数字电路与逻辑设计": fzu_cs_course\数字电路与逻辑设计\数字电路与逻辑设计.md
-      - 离散数学:
-          - "离散数学": fzu_cs_course\离散数学\离散数学.md
-      - 数据结构:
-          - "数据结构": fzu_cs_course\数据结构\数据结构.md
+          - "复习纲要": fzu_cs_course\数字电路与逻辑设计\复习纲要.md
+      - "离散数学": fzu_cs_course\离散数学\离散数学.md
+      - "数据结构": fzu_cs_course\数据结构\数据结构.md
       - 计算机组成原理:
           - "计算机组成原理": fzu_cs_course\计算机组成原理\计算机组成原理.md
           - "计算机组成原理考点": fzu_cs_course\计算机组成原理\计算机组成原理考点.md
@@ -34,8 +32,7 @@ nav:
       - 数据库系统原理:
           - "数据库系统原理": fzu_cs_course\数据库系统原理\数据库系统原理.md
           - "简答题": fzu_cs_course\数据库系统原理\数据库简答题.md
-      - 图形学:
-          - "图形学": fzu_cs_course\图形学\图形学.md
+      - "计算机图形学": fzu_cs_course\图形学\图形学.md
       - 汇编&接口:
           - "汇编&接口": fzu_cs_course\汇编&接口\汇编&接口.md
           - "汇编模板": fzu_cs_course\汇编&接口\汇编模板.md
@@ -125,12 +122,23 @@ markdown_extensions:
   - meta #自定义文章元数据
   - pymdownx.caret #下划线
   - pymdownx.mark #文本高亮
-  - pymdownx.highlight
+  - pymdownx.highlight: # 代码块语法高亮
+      anchor_linenums: true # 启用行号
+      line_spans: __span # 自定义行范围
+      pygments_lang_class: true # 使用语言类名
+  - pymdownx.inlinehilite # 行内代码高亮
   - pymdownx.tilde #删除线
+  - pymdownx.snippets #代码片段, 没用过, 抄的配置
+  - pymdownx.superfences #代码块增强
   - pymdownx.arithmatex: # latex
       generic: true
   - toc: # 大纲
       permalink: true
+  - def_list # 列表
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - mdx_truly_sane_lists # 多级列表
+  # - fenced_code
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -143,6 +151,7 @@ plugins:
   #     repository: Fzu-SOSD-Lab/molihua
   #     branch: main
   #     enabled: !ENV [CI, false]
+  # - img2fig
   - blog:
       blog_toc: true
       post_excerpt: required
