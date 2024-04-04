@@ -84,7 +84,7 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: 亮色模式
-  custom_dir: overrides
+  # custom_dir: overrides
   features:
     - navigation.tabs
     - navigation.indexes
