@@ -13,35 +13,36 @@ nav:
   - FZU CS课程:
       - fzu_cs_course/README.md
       - 数字电路与逻辑设计:
-          - "数字电路与逻辑设计": fzu_cs_course\数字电路与逻辑设计\数字电路与逻辑设计.md
-          - "复习纲要": fzu_cs_course\数字电路与逻辑设计\复习纲要.md
-      - "离散数学": fzu_cs_course\离散数学\离散数学.md
-      - "数据结构": fzu_cs_course\数据结构\数据结构.md
+          - "数字电路与逻辑设计": fzu_cs_course/数字电路与逻辑设计/数字电路与逻辑设计.md
+          - "复习纲要": fzu_cs_course/数字电路与逻辑设计/复习纲要.md
+      - "离散数学": fzu_cs_course/离散数学/离散数学.md
+      - "数据结构": fzu_cs_course/数据结构/数据结构.md
       - 计算机组成原理:
-          - "计算机组成原理": fzu_cs_course\计算机组成原理\计算机组成原理.md
-          - "计算机组成原理考点": fzu_cs_course\计算机组成原理\计算机组成原理考点.md
+          - "计算机组成原理": fzu_cs_course/计算机组成原理/计算机组成原理.md
+          - "计算机组成原理考点": fzu_cs_course/计算机组成原理/计算机组成原理考点.md
       - 计算机网络:
-          - "计算机网络": fzu_cs_course\计算机网络\计算机网络.md
-          - "课后题": fzu_cs_course\计算机网络\计算机网络 课后题.md
+          - "计算机网络": fzu_cs_course/计算机网络/计算机网络.md
+          - "课后题": fzu_cs_course/计算机网络/计算机网络 课后题.md
       - 操作系统:
-          - "操作系统": fzu_cs_course\操作系统\操作系统.md
-          - "简答题": fzu_cs_course\操作系统\简答题 MDver.md
+          - "操作系统": fzu_cs_course/操作系统/操作系统.md
+          - "简答题": fzu_cs_course/操作系统/简答题 MDver.md
       - 软件工程:
-          - "软件工程": fzu_cs_course\软件工程\软件工程.md
-          - "知识点": fzu_cs_course\软件工程\一些整理.md
+          - "软件工程": fzu_cs_course/软件工程/软件工程.md
+          - "知识点": fzu_cs_course/软件工程/一些整理.md
       - 数据库系统原理:
-          - "数据库系统原理": fzu_cs_course\数据库系统原理\数据库系统原理.md
-          - "简答题": fzu_cs_course\数据库系统原理\数据库简答题.md
-      - "计算机图形学": fzu_cs_course\图形学\图形学.md
+          - "数据库系统原理": fzu_cs_course/数据库系统原理/数据库系统原理.md
+          - "简答题": fzu_cs_course/数据库系统原理/数据库简答题.md
+      - "计算机图形学": fzu_cs_course/图形学/图形学.md
       - 汇编&接口:
-          - "汇编&接口": fzu_cs_course\汇编&接口\汇编&接口.md
-          - "汇编模板": fzu_cs_course\汇编&接口\汇编模板.md
+          - "汇编&接口": fzu_cs_course/汇编&接口/汇编&接口.md
+          - "汇编模板": fzu_cs_course/汇编&接口/汇编模板.md
   - 后端开发:
       - Java:
           - "java类基础": backend/java/java类基础.md
           - "继承封装多态": backend/java/继承封装多态.md
           - "10面向对象高级": backend/java/10面向对象高级.md
           - "11枚举和注解": backend/java/11枚举和注解.md
+          - "12异常": backend/java/12异常Exception.md
           - "13常用类": backend/java/13常用类.md
           - "14集合": backend/java/14集合.md
           - "15泛型": backend/java/15泛型.md
