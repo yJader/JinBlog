@@ -216,7 +216,7 @@ UNIX 世界里你做任何事情都是在**<mark>编程</mark>**
 - “Technical Debt”: 每当你写出不好维护的代码，你都在给你未来的调试/需求变更挖坑
   - 论敏捷开发与:shit:山代码
 
-### 调适理论: 推论1
+### 调试理论: 推论1
 
 #### <font style="color:blue">需求 → 设计 → 代码 → Fault</font> → Error → Failure
 
