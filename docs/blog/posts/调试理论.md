@@ -218,7 +218,7 @@ UNIX 世界里你做任何事情都是在**<mark>编程</mark>**
 
 ### 调适理论: 推论1
 
-### <font style="color:blue">需求 → 设计 → 代码 → Fault</font> → Error → Failure
+#### <font style="color:blue">需求 → 设计 → 代码 → Fault</font> → Error → Failure
 
 - **写好代码**：不要在写代码的时候忘记需求和设计
 - 不言自明 (Self-explanatory)
