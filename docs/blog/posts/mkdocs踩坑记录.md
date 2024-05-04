@@ -4,6 +4,7 @@ date:
   updated: 2024-04-04
 categories:
   - 踩坑记录
+comments: true 
 ---
 
 ## Latex
