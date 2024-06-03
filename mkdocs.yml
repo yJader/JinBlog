@@ -38,6 +38,11 @@ nav:
           - "汇编模板": fzu_cs_course/汇编&接口/汇编模板.md
       - 数据挖掘:
           - "数据挖掘": fzu_cs_course/数据挖掘/数据挖掘.md
+      - 计算机系统结构:
+          - fzu_cs_course/计算机系统结构/README.md
+          - "系统结构": fzu_cs_course/计算机系统结构/系统结构.md
+          - "复习提纲MAP": fzu_cs_course/计算机系统结构/复习提纲MAP.md
+          - "简答题": fzu_cs_course/计算机系统结构/简答题.md
   - 后端开发:
       - Java:
           - "java类基础": backend/java/java类基础.md
