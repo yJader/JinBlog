@@ -13,3 +13,7 @@
 $\LaTeX$等特殊格式可能存在渲染bug, 可以clone后用本地编辑器打开QAQ
 
 欢迎PR
+
+Contributor List: 
+
+- [凌风](): 图形学、计算机系统结构 
