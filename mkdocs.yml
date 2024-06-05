@@ -16,7 +16,9 @@ nav:
           - "数字电路与逻辑设计": fzu_cs_course/数字电路与逻辑设计/数字电路与逻辑设计.md
           - "复习纲要": fzu_cs_course/数字电路与逻辑设计/复习纲要.md
       - "离散数学": fzu_cs_course/离散数学/离散数学.md
-      - "数据结构": fzu_cs_course/数据结构/数据结构.md
+      - 数据结构:
+          - "数据结构": fzu_cs_course/数据结构/数据结构.md
+          - "数据结构考试材料": fzu_cs_course/数据结构/数据结构考试材料.md
       - 计算机组成原理:
           - "计算机组成原理": fzu_cs_course/计算机组成原理/计算机组成原理.md
           - "计算机组成原理考点": fzu_cs_course/计算机组成原理/计算机组成原理考点.md
@@ -43,6 +45,7 @@ nav:
           - "系统结构": fzu_cs_course/计算机系统结构/系统结构.md
           - "复习提纲MAP": fzu_cs_course/计算机系统结构/复习提纲MAP.md
           - "简答题": fzu_cs_course/计算机系统结构/简答题.md
+          - "小测选填": fzu_cs_course/计算机系统结构/小测选填.md
   - 后端开发:
       - Java:
           - "java类基础": backend/java/java类基础.md
