@@ -46,6 +46,8 @@ nav:
           - "复习提纲MAP": fzu_cs_course/计算机系统结构/复习提纲MAP.md
           - "简答题": fzu_cs_course/计算机系统结构/简答题.md
           - "小测选填": fzu_cs_course/计算机系统结构/小测选填.md
+      - 编译原理:
+          - "编译原理": fzu_cs_course/编译原理/编译原理.md
   - 后端开发:
       - Java:
           - "java类基础": backend/java/java类基础.md
