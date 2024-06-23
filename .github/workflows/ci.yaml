@@ -26,6 +26,7 @@ jobs:
 
       - run: pip install mkdocs-material
       - run: pip install mdx-truly-sane-lists
-#      - run: pip install mkdocs-git-committers-plugin-2
-
+      #      - run: pip install mkdocs-git-committers-plugin-2
+      - name: Remove test directory # 删除test目录
+        run: rm -rf docs/test
       - run: mkdocs gh-deploy --force

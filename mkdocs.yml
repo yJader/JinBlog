@@ -9,7 +9,7 @@ use_directory_urls: false # 不使用目录URL
 
 nav:
   - "Jin Blog": index.md
-  # - "test": test/testBlog.md
+  - "test": test/test.md
   - FZU CS课程:
       - fzu_cs_course/README.md
       - 数字电路与逻辑设计:
@@ -48,6 +48,9 @@ nav:
           - "小测选填": fzu_cs_course/计算机系统结构/小测选填.md
       - 编译原理:
           - "编译原理": fzu_cs_course/编译原理/编译原理.md
+      - 计算方法(数值分析):
+          - "计算方法(数值分析)": fzu_cs_course/计算方法(数值分析)/计算方法(数值分析).md
+          - "公式整理": fzu_cs_course/计算方法(数值分析)/公式整理.md
   - 后端开发:
       - Java:
           - "java类基础": backend/java/java类基础.md
