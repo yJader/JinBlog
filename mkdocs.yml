@@ -51,6 +51,8 @@ nav:
       - 计算方法(数值分析):
           - "计算方法(数值分析)": fzu_cs_course/计算方法(数值分析)/计算方法(数值分析).md
           - "公式整理": fzu_cs_course/计算方法(数值分析)/公式整理.md
+      # - 人机交互:
+      - "人机交互": fzu_cs_course/人机交互/复习课件 MD Ver.md
   - 后端开发:
       - Java:
           - "java类基础": backend/java/java类基础.md
@@ -157,10 +159,9 @@ markdown_extensions:
       custom_checkbox: true
   - mdx_truly_sane_lists # 多级列表
   # - fenced_code
-  - pymdownx.emoji: # emoji
+  - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg # latex
-
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_javascript:
   - javascripts/mathjax.js
