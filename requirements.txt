@@ -1,0 +1,3 @@
+mkdocs-material
+mdx-truly-sane-lists
+# mkdocs-git-committers-plugin-2

@@ -9,7 +9,7 @@ use_directory_urls: false # 不使用目录URL
 
 nav:
   - "Jin Blog": index.md
-  - "test": test/test.md
+  # - "test": test/test.md
   - FZU CS课程:
       - fzu_cs_course/README.md
       - 数字电路与逻辑设计:

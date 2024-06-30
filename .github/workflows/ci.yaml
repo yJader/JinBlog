@@ -24,9 +24,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
 
-      - run: pip install mkdocs-material
-      - run: pip install mdx-truly-sane-lists
-      #      - run: pip install mkdocs-git-committers-plugin-2
+      - run: pip install -r requirements.txt
       - name: Remove test directory # 删除test目录
         run: rm -rf docs/test
       - run: mkdocs gh-deploy --force
