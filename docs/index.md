@@ -18,7 +18,7 @@
   - Java 后端开发: `SpringBoot`, `MySQL`, `SpringSecurity`
   - System(广义): `RSICV`, `CS15-213`, `6.S081`(ing), `CS143`
 
-- 臭看动画的 & 中 V 日 V 双厨
+- 臭看动画的 & 中 V 日 V 双厨(注: vocaloid)
 
 ## Friend Link
 
