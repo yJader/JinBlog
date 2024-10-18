@@ -12,13 +12,16 @@
   - [yJader (亦瑾) (github.com)](https://github.com/yJader)
   - [亦瑾 (yJader) (Gitee.com)](https://gitee.com/yJader)
 
-- 常用语言: `Java`, `Cpp`
+- 常用语言: `Java`, `CPP`
 - 学习方向:
-
   - Java 后端开发: `SpringBoot`, `MySQL`, `SpringSecurity`
-  - System(广义): `RSICV`, `CS15-213`, `6.S081`(ing), `CS143`
+  - System(学习中): 
+    - [CMU CS15-213 Introduction to Computer Systems (ICS)](https://www.cs.cmu.edu/~213/), 即[CSAPP](https://csapp.cs.cmu.edu/)
+    - [南京大学 操作系统: 设计与实现 - 蒋炎岩](https://jyywiki.cn/OS/2024/)
+    - [MIT 6.824/6.5840: Distributed Systems](https://pdos.csail.mit.edu/6.824/index.html)
+    - 很长的TODOList...
 
-- 臭看动画的 & 中 V 日 V 双厨(注: vocaloid)
+- 臭看动画的 & 中V日V 双厨(注: V-Vocaloid)
 
 ## Friend Link
 
