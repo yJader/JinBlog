@@ -24,7 +24,17 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
 
+      - name: Sync README.md
+        run: |
+          cp docs/index.md README.md
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "Sync README.md with docs/index.md"
+          git push
+
       - run: pip install -r requirements.txt
       - name: Remove test directory # 删除test目录
         run: rm -rf docs/test
       - run: mkdocs gh-deploy --force
+      
