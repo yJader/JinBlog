@@ -73,7 +73,7 @@ nav:
                             - "22Java8新特性": backend/java/22Java8新特性.md
                             - "杂项": backend/java/杂项.md
         - 工具分享:
-                  - "Windows装机小贴士": tools/Windows装机小贴士.md
+                  - "Windows装机笔记(附软件推荐)": tools/Windows装机笔记(附软件推荐).md
                   - "Linux装机笔记": tools/Linux装机笔记.md
         - 博客随笔:
                   - blog/index.md

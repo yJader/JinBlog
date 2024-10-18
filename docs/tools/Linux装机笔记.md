@@ -1,3 +1,11 @@
+---
+date:
+  created: 2024-05-22
+  updated: 2024-10-18
+comments: true 
+---
+
+
 # 装机note
 
 > 以Ubuntu为例

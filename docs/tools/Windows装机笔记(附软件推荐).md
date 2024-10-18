@@ -1,4 +1,14 @@
+---
+date:
+  created: 2024-09-25
+  updated: 2024-10-18
+comments: true 
+---
+
+
 # Windows装机小贴士
+
+> 兼实用软件推荐
 
 ## 网络环境
 
@@ -76,7 +86,7 @@ Alt+Space 呼出搜索栏, 通过拼音/英文搜索电脑中已安装的软件,
 
 有一个[PowetToys](# PowerToys)的替代项[PowerToys Run](https://learn.microsoft.com/zh-cn/windows/powertoys/run), 功能相似, 还能搜索系统本地文件
 
-![QQ_1729060368106](Windows装机小贴士.assets/QQ_1729060368106.png)
+![QQ_1729060368106](Windows装机笔记(附软件推荐).assets/PowerToysRun.png)
 
 ## PowerToys
 
@@ -100,7 +110,13 @@ scoop install powertoys
 
 
 
-## 文本编辑: Markdown
+## 软件推荐
+
+上面的软件非常建议每台机子都整一个
+
+以下为常用软件推荐, 自行挑选
+
+### 文本编辑: Markdown
 
 > [Markdown 教程](https://markdown.com.cn/)
 >
@@ -112,7 +128,7 @@ scoop install powertoys
 
 - 当然, 也有一些支持Markdown的富文本编辑工具(Notion), 但笔者没有用过QAQ, 欢迎PR补充
 
-### 编辑器推荐
+#### 编辑器推荐
 
 1. **Typora**：简洁易用，实时预览，支持多格式导出，适合高效写作。
    - 笔者在用的软件(我超爱!)。Typora的渲染引擎对语法限制过于宽泛&快捷键好用, 导致笔者不好转用其他软件.
@@ -128,3 +144,34 @@ scoop install powertoys
    - **VS Code + Markdown插件**
    - **IDEA**: 似乎自带markdown渲染器
 
+### 思维导图&流程图
+
+**思维导图**
+
+- [幕布](https://mubu.com/home): 简洁易用, 约等于将markdown无序列表自动转为思维导图
+- [XMind](https://xmind.cn/): 体验类似于用Word编辑文档, 功能多, 但是麻烦, 个人是很不爱用
+- Obsidian-[Mind Map插件](https://github.com/lynchjames/obsidian-mind-map): 真•markdown无序列表转思维导图
+
+**流程图**
+
+- [draw.io](https://www.drawio.com/): 开源的在线图表绘制工具
+  - 开源, 所以有很多换皮软件([ProcessOn](https://www.processon.com/), [ioDraw](https://www.iodraw.com/)), 会限制创建文件数量, 但是本地化好一些XD
+- [Mermaid](https://mermaid.nodejs.cn/): 一种图表编辑语言, 上手门槛略高
+  - 在Markdown中可以用代码块````mermaid`进行渲染 (部分粗糙的渲染引擎可能不支持, 仅测试过Typora&VsCode)
+  - 但是 ==**LLM IS ALL YOU NEED!**== 丢给大模型源代码, 让它以mermaid格式画出流程图即可完成实验报告中的烦人要求
+
+### 文件搜索: Everything
+
+> https://www.voidtools.com/zh-cn/
+
+文件快速搜索(真的很快)
+
+有便携版, 可以在U盘里备一个
+
+安装可以试试神奇的`scoop install everything`
+
+
+
+
+
+> 欢迎补充(或许应该迁移到共享文档来方便协作)
