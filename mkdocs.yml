@@ -8,180 +8,182 @@ repo_url: https://github.com/yJader/JinBlog
 use_directory_urls: false # 不使用目录URL
 
 nav:
-        - "Jin Blog": index.md
-        # - "test": test/test.md
-        - FZU CS课程:
-                  - fzu_cs_course/README.md
-                  - 数字电路与逻辑设计:
-                            - "数字电路与逻辑设计": fzu_cs_course/数字电路与逻辑设计/数字电路与逻辑设计.md
-                            - "复习纲要": fzu_cs_course/数字电路与逻辑设计/复习纲要.md
-                  - "离散数学": fzu_cs_course/离散数学/离散数学.md
-                  - 数据结构:
-                            - "数据结构": fzu_cs_course/数据结构/数据结构.md
-                            - "数据结构考试材料": fzu_cs_course/数据结构/数据结构考试材料.md
-                  - 计算机组成原理:
-                            - "计算机组成原理": fzu_cs_course/计算机组成原理/计算机组成原理.md
-                            - "计算机组成原理考点": fzu_cs_course/计算机组成原理/计算机组成原理考点.md
-                  - 计算机网络:
-                            - "计算机网络": fzu_cs_course/计算机网络/计算机网络.md
-                            - "课后题": fzu_cs_course/计算机网络/计算机网络 课后题.md
-                  - 操作系统:
-                            - "操作系统": fzu_cs_course/操作系统/操作系统.md
-                            - "简答题": fzu_cs_course/操作系统/简答题 MDver.md
-                  - 软件工程:
-                            - "软件工程": fzu_cs_course/软件工程/软件工程.md
-                            - "知识点": fzu_cs_course/软件工程/一些整理.md
-                  - 数据库系统原理:
-                            - "数据库系统原理": fzu_cs_course/数据库系统原理/数据库系统原理.md
-                            - "简答题": fzu_cs_course/数据库系统原理/数据库简答题.md
-                  - "计算机图形学": fzu_cs_course/图形学/图形学.md
-                  - 汇编&接口:
-                            - "汇编&接口": fzu_cs_course/汇编&接口/汇编&接口.md
-                            - "汇编模板": fzu_cs_course/汇编&接口/汇编模板.md
-                  - 数据挖掘:
-                            - "数据挖掘": fzu_cs_course/数据挖掘/数据挖掘.md
-                  - 计算机系统结构:
-                            - fzu_cs_course/计算机系统结构/README.md
-                            - "系统结构": fzu_cs_course/计算机系统结构/系统结构.md
-                            - "复习提纲MAP": fzu_cs_course/计算机系统结构/复习提纲MAP.md
-                            - "简答题": fzu_cs_course/计算机系统结构/简答题.md
-                            - "小测选填": fzu_cs_course/计算机系统结构/小测选填.md
-                  - 编译原理:
-                            - "编译原理": fzu_cs_course/编译原理/编译原理.md
-                  - 计算方法(数值分析):
-                            - "计算方法(数值分析)": fzu_cs_course/计算方法(数值分析)/计算方法(数值分析).md
-                            - "公式整理": fzu_cs_course/计算方法(数值分析)/公式整理.md
-                  - 人机交互:
-                            - "人机交互": fzu_cs_course/人机交互/复习课件 MD Ver.md
-                            - "人机交互考点": fzu_cs_course/人机交互/缩减版.md
-        - 后端开发:
-                  - Java:
-                            - "java类基础": backend/java/java类基础.md
-                            - "继承封装多态": backend/java/继承封装多态.md
-                            - "10面向对象高级": backend/java/10面向对象高级.md
-                            - "11枚举和注解": backend/java/11枚举和注解.md
-                            - "12异常": backend/java/12异常Exception.md
-                            - "13常用类": backend/java/13常用类.md
-                            - "14集合": backend/java/14集合.md
-                            - "15泛型": backend/java/15泛型.md
-                            - "16坦克大战_part1": backend/java/16坦克大战_part1.md
-                            - "17多线程基础": backend/java/17多线程基础.md
-                            - "18坦克大战_part2": backend/java/18坦克大战_part2.md
-                            - "19IO流": backend/java/19IO流.md
-                            - "20网络编程": backend/java/20网络编程.md
-                            - "21反射与动态代理": backend/java/21反射与动态代理.md
-                            - "22Java8新特性": backend/java/22Java8新特性.md
-                            - "杂项": backend/java/杂项.md
-        - 工具分享:
-                  - "Windows装机笔记(附软件推荐)": tools/Windows装机笔记(附软件推荐).md
-                  - "Linux装机笔记": tools/Linux装机笔记.md
-        - 博客随笔:
-                  - blog/index.md
+  - "Jin Blog": index.md
+  # - "test": test/test.md
+  - FZU CS课程:
+      - fzu_cs_course/README.md
+      - 数字电路与逻辑设计:
+          - "数字电路与逻辑设计": fzu_cs_course/数字电路与逻辑设计/数字电路与逻辑设计.md
+          - "复习纲要": fzu_cs_course/数字电路与逻辑设计/复习纲要.md
+      - "离散数学": fzu_cs_course/离散数学/离散数学.md
+      - 数据结构:
+          - "数据结构": fzu_cs_course/数据结构/数据结构.md
+          - "数据结构考试材料": fzu_cs_course/数据结构/数据结构考试材料.md
+      - 计算机组成原理:
+          - "计算机组成原理": fzu_cs_course/计算机组成原理/计算机组成原理.md
+          - "计算机组成原理考点": fzu_cs_course/计算机组成原理/计算机组成原理考点.md
+      - 计算机网络:
+          - "计算机网络": fzu_cs_course/计算机网络/计算机网络.md
+          - "课后题": fzu_cs_course/计算机网络/计算机网络 课后题.md
+      - 操作系统:
+          - "操作系统": fzu_cs_course/操作系统/操作系统.md
+          - "简答题": fzu_cs_course/操作系统/简答题 MDver.md
+      - 软件工程:
+          - "软件工程": fzu_cs_course/软件工程/软件工程.md
+          - "知识点": fzu_cs_course/软件工程/一些整理.md
+      - 数据库系统原理:
+          - "数据库系统原理": fzu_cs_course/数据库系统原理/数据库系统原理.md
+          - "简答题": fzu_cs_course/数据库系统原理/数据库简答题.md
+      - "计算机图形学": fzu_cs_course/图形学/图形学.md
+      - 汇编&接口:
+          - "汇编&接口": fzu_cs_course/汇编&接口/汇编&接口.md
+          - "汇编模板": fzu_cs_course/汇编&接口/汇编模板.md
+      - 劳动实践(BearPi):
+          - "劳动实践(BearPi)笔记": fzu_cs_course/劳动实践(BearPi)/劳动实践笔记.md
+      - 数据挖掘:
+          - "数据挖掘": fzu_cs_course/数据挖掘/数据挖掘.md
+      - 计算机系统结构:
+          - fzu_cs_course/计算机系统结构/README.md
+          - "系统结构": fzu_cs_course/计算机系统结构/系统结构.md
+          - "复习提纲MAP": fzu_cs_course/计算机系统结构/复习提纲MAP.md
+          - "简答题": fzu_cs_course/计算机系统结构/简答题.md
+          - "小测选填": fzu_cs_course/计算机系统结构/小测选填.md
+      - 编译原理:
+          - "编译原理": fzu_cs_course/编译原理/编译原理.md
+      - 计算方法(数值分析):
+          - "计算方法(数值分析)": fzu_cs_course/计算方法(数值分析)/计算方法(数值分析).md
+          - "公式整理": fzu_cs_course/计算方法(数值分析)/公式整理.md
+      - 人机交互:
+          - "人机交互": fzu_cs_course/人机交互/复习课件 MD Ver.md
+          - "人机交互考点": fzu_cs_course/人机交互/缩减版.md
+  - 后端开发:
+      - Java:
+          - "java类基础": backend/java/java类基础.md
+          - "继承封装多态": backend/java/继承封装多态.md
+          - "10面向对象高级": backend/java/10面向对象高级.md
+          - "11枚举和注解": backend/java/11枚举和注解.md
+          - "12异常": backend/java/12异常Exception.md
+          - "13常用类": backend/java/13常用类.md
+          - "14集合": backend/java/14集合.md
+          - "15泛型": backend/java/15泛型.md
+          - "16坦克大战_part1": backend/java/16坦克大战_part1.md
+          - "17多线程基础": backend/java/17多线程基础.md
+          - "18坦克大战_part2": backend/java/18坦克大战_part2.md
+          - "19IO流": backend/java/19IO流.md
+          - "20网络编程": backend/java/20网络编程.md
+          - "21反射与动态代理": backend/java/21反射与动态代理.md
+          - "22Java8新特性": backend/java/22Java8新特性.md
+          - "杂项": backend/java/杂项.md
+  - 工具分享:
+      - "Windows装机笔记(附软件推荐)": tools/Windows装机笔记(附软件推荐).md
+      - "Linux装机笔记": tools/Linux装机笔记.md
+  - 博客随笔:
+      - blog/index.md
 
 theme:
-        font:
-                text: Roboto
-                code: Roboto Mono
-        # logo: "assets/logo-white.png"
-        # favicon: "assets/icon.png"
-        name: material
-        highlightjs: true
-        hljs_languages:
-                - yaml
-                - rust
-                - java
-                - bash
-        language: zh
-        palette:
-                - media: "(prefers-color-scheme: light)"
-                  primary: "indigo"
-                  scheme: default
-                  accent: "orange"
-                  toggle:
-                          icon: material/weather-night
-                          name: 暗色模式
-                - media: "(prefers-color-scheme: dark)"
-                  primary: "black"
-                  scheme: slate
-                  toggle:
-                          icon: material/weather-sunny
-                          name: 亮色模式
-        custom_dir: overrides
-        features:
-                - navigation.tabs
-                - navigation.indexes
-                - navigation.tabs.sticky
-                - navigation.tracking
-                - toc.follow
-                - content.action.edit
-                - navigation.footer
-                - navigation.path
-                - navigation.top
-                - search.suggest
-                - search.highlight
-                - search.share
-        icon:
-                admonition:
-                        note: octicons/tag-16
-                        abstract: octicons/checklist-16
-                        info: octicons/info-16
-                        tip: octicons/squirrel-16
-                        success: octicons/check-16
-                        question: octicons/question-16
-                        warning: octicons/alert-16
-                        failure: octicons/x-circle-16
-                        danger: octicons/zap-16
-                        bug: octicons/bug-16
-                        example: octicons/beaker-16
-                        quote: octicons/quote-16
+  font:
+    text: Roboto
+    code: Roboto Mono
+  # logo: "assets/logo-white.png"
+  # favicon: "assets/icon.png"
+  name: material
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - rust
+    - java
+    - bash
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      primary: "indigo"
+      scheme: default
+      accent: "orange"
+      toggle:
+        icon: material/weather-night
+        name: 暗色模式
+    - media: "(prefers-color-scheme: dark)"
+      primary: "black"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: 亮色模式
+  custom_dir: overrides
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - toc.follow
+    - content.action.edit
+    - navigation.footer
+    - navigation.path
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
 
 markdown_extensions:
-        - attr_list
-        - md_in_html
-        - pymdownx.critic
-        - pymdownx.keys
-        - admonition #MkDocs 警告框
-        - footnotes #脚注
-        - meta #自定义文章元数据
-        - pymdownx.caret #下划线
-        - pymdownx.mark #文本高亮
-        - pymdownx.highlight: # 代码块语法高亮
-                  anchor_linenums: true # 启用行号
-                  line_spans: __span # 自定义行范围
-                  pygments_lang_class: true # 使用语言类名
-        - pymdownx.inlinehilite # 行内代码高亮
-        - pymdownx.tilde #删除线
-        - pymdownx.snippets #代码片段, 没用过, 抄的配置
-        - pymdownx.superfences #代码块增强
-        - pymdownx.arithmatex: # latex
-                  generic: true
-        - toc: # 大纲
-                  permalink: true
-                  baselevel: 2 # 将大纲的基本级别设置为2(#会变为<h2>)
-        - def_list # 列表
-        - pymdownx.tasklist:
-                  custom_checkbox: true
-        - mdx_truly_sane_lists # 多级列表
-        # - fenced_code
-        - pymdownx.emoji:
-                  emoji_index: !!python/name:material.extensions.emoji.twemoji
-                  emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - pymdownx.critic
+  - pymdownx.keys
+  - admonition #MkDocs 警告框
+  - footnotes #脚注
+  - meta #自定义文章元数据
+  - pymdownx.caret #下划线
+  - pymdownx.mark #文本高亮
+  - pymdownx.highlight: # 代码块语法高亮
+      anchor_linenums: true # 启用行号
+      line_spans: __span # 自定义行范围
+      pygments_lang_class: true # 使用语言类名
+  - pymdownx.inlinehilite # 行内代码高亮
+  - pymdownx.tilde #删除线
+  - pymdownx.snippets #代码片段, 没用过, 抄的配置
+  - pymdownx.superfences #代码块增强
+  - pymdownx.arithmatex: # latex
+      generic: true
+  - toc: # 大纲
+      permalink: true
+      baselevel: 2 # 将大纲的基本级别设置为2(#会变为<h2>)
+  - def_list # 列表
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - mdx_truly_sane_lists # 多级列表
+  # - fenced_code
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_javascript:
-        - javascripts/mathjax.js
-        - https://polyfill.io/v3/polyfill.min.js?features=es6
-        - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
-        - search
-        # - git-committers:
-        #     repository: Fzu-SOSD-Lab/molihua
-        #     branch: main
-        #     enabled: !ENV [CI, false]
-        - blog:
-                  blog_toc: true
-                  post_excerpt: required
-                  archive: false
-                  categories_name: tags
-                  pagination_per_page: 5
-                  post_url_format: "{slug}" # 博客url格式
+  - search
+  # - git-committers:
+  #     repository: Fzu-SOSD-Lab/molihua
+  #     branch: main
+  #     enabled: !ENV [CI, false]
+  - blog:
+      blog_toc: true
+      post_excerpt: required
+      archive: false
+      categories_name: tags
+      pagination_per_page: 5
+      post_url_format: "{slug}" # 博客url格式

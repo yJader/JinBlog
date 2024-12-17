@@ -46,8 +46,6 @@ python transfer.py example.txt
 python transfer.py *.txt
 ```
 
-
-
 ## 效果
 
 运行脚本后，文件中的内容将会被以下规则处理：
