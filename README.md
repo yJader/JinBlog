@@ -6,7 +6,7 @@
 
 ## About Me
 
-- FZU SOSD web 组成员
+- [FZU SOSD](https://sosd.fzu.edu.cn/home) Web 组成员
 - Hub 主页:
 
   - [yJader (亦瑾) (github.com)](https://github.com/yJader)
