@@ -1,4 +1,4 @@
-#  FZU CS Notes
+# FZU CS Notes
 
 > ~~男大学生自用99新笔记~~
 
@@ -10,10 +10,15 @@
 
 笔记内容较多, 善用大纲和CtrlF进行跳转
 
-$\LaTeX$等特殊格式可能存在渲染bug, 可以clone后用本地编辑器打开QAQ
+bug记录:
+
+- $\LaTeX$等特殊格式可能存在渲染bug
+- 因mkdocs框架问题, 页内标题跳转中文标题失效
+
+如果这些问题影响了你的体验, 可以clone后用本地编辑器打开QAQ
 
 欢迎PR
 
-Contributor List: 
+Contributor List:
 
-- [凌风](): 图形学、计算机系统结构 
+- [凌风](): 图形学、计算机系统结构
