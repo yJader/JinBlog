@@ -15,7 +15,7 @@
 - 常用语言: `Java`, `CPP`
 - 学习方向:
   - Java 后端开发: `SpringBoot`, `MySQL`, `SpringSecurity`
-  - System(学习中): 
+  - System(学习中):
     - [CMU CS15-213 Introduction to Computer Systems (ICS)](https://www.cs.cmu.edu/~213/), 即[CSAPP](https://csapp.cs.cmu.edu/)
     - [南京大学 操作系统: 设计与实现 - 蒋炎岩](https://jyywiki.cn/OS/2024/)
     - [MIT 6.824/6.5840: Distributed Systems](https://pdos.csail.mit.edu/6.824/index.html)
