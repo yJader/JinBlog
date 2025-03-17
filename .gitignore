@@ -2,3 +2,6 @@
 /.vscode
 /.obsidian
 .DS_Store
+
+# 虚拟环境
+/blog
