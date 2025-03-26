@@ -59,7 +59,7 @@ nav:
     - CSDIY公开课:
           - CS224W图机器学习:
                 - csdiy/CS224w图机器学习/README.md
-                - "CS224w Notes": csdiy/CS224w图机器学习/CS224W.pdf
+                - "CS224w Notes": csdiy/CS224w图机器学习/CS224w.pdf
                 - "CS224w 图机器学习笔记": csdiy/CS224w图机器学习/CS224W 图机器学习笔记.md
     - 后端开发:
           - Java:
