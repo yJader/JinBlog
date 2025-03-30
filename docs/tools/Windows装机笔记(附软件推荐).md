@@ -1,7 +1,7 @@
 ---
 date:
   created: 2024-09-25
-  updated: 2024-10-18
+  updated: 2025-03-31
 comments: true 
 ---
 
@@ -26,10 +26,8 @@ comments: true
 
 - 能够支持许多的常用软件(java, python, nodejs, QQ, wechat...)
   - 应该还可以下steam*~~(管家)~~*, 可以试试
-  - 今后换机可以先下这个, 快速装机! 
+  - 今后换机可以先下这个, 快速装机!
 - 注: 已经装好的软件就不用卸了再用scoop重装一遍了, 能跑就行XD
-
-
 
 ### 安装流程
 
@@ -73,8 +71,6 @@ scoop install gh
 scoop install python
 ```
 
-
-
 ## Utools
 
 > [uTools官网 - 新一代效率工具平台](https://u.tools/)
@@ -108,8 +104,6 @@ scoop bucket add extras
 scoop install powertoys
 ```
 
-
-
 ## 软件推荐
 
 上面的软件非常建议每台机子都整一个
@@ -133,16 +127,17 @@ scoop install powertoys
 1. **Typora**：简洁易用，实时预览，支持多格式导出，适合高效写作。
    - 笔者在用的软件(我超爱!)。Typora的渲染引擎对语法限制过于宽泛&快捷键好用, 导致笔者不好转用其他软件.
    - 使用例--**课程实验报告撰写**: 不用再考虑word的字体/行距/段落格式...了!
-     - 导出为Word: 安装Pandoc插件后可以导出.doc(Word)文件, 
-     - 导出为PDF: [Keldos-Li/typora-latex-theme: 将Typora伪装成LaTeX的中文样式主题，本科生轻量级课程论文撰写的好帮手。](https://github.com/Keldos-Li/typora-latex-theme) 
+     - 导出为Word: 安装Pandoc插件后可以导出.doc(Word)文件,
+     - 导出为PDF: [Keldos-Li/typora-latex-theme: 将Typora伪装成LaTeX的中文样式主题，本科生轻量级课程论文撰写的好帮手。](https://github.com/Keldos-Li/typora-latex-theme)
 
 3. **Obsidian**：强大的知识管理工具，支持双向链接和图谱视图。
    - Rock学长常用
    - 有十分丰富的开源插件生态
 
-4.	**IDE+插件**: 便于写项目的时候简单记录 
-   - **VS Code + Markdown插件**
-   - **IDEA**: 似乎自带markdown渲染器
+4. **IDE+插件**: 便于写项目的时候简单记录
+
+- **VS Code + Markdown插件**
+- **IDEA**: 似乎自带markdown渲染器
 
 ### 思维导图&流程图
 
@@ -162,7 +157,7 @@ scoop install powertoys
 
 ### 文件搜索: Everything
 
-> https://www.voidtools.com/zh-cn/
+> <https://www.voidtools.com/zh-cn/>
 
 文件快速搜索(真的很快)
 
@@ -170,8 +165,19 @@ scoop install powertoys
 
 安装可以试试神奇的`scoop install everything`
 
+### 大模型应用: ChatGPT desktop app
 
+> <https://openai.com/chatgpt/download/>
 
+桌面端相比网页版的好处在于, 可以通过快捷键来呼出小窗口进行提问, 方便在进行其他工作时快速调用和关闭
 
+因为Windows需要前往微软商店下载, 但是锁国区, 需要使用一些小技巧
 
-> 欢迎补充(或许应该迁移到共享文档来方便协作)
+- 打开系统设置, 修改`国家或地区` - `美国` , 然后重启微软商店, 即可搜索到ChatGPT
+
+![image-20250331005151429](./Windows装机笔记(附软件推荐).assets/image-20250331005151429.png)
+
+*注意甄别, 不要下到乱七八糟的应用去了*
+<img src="./Windows装机笔记(附软件推荐).assets/image-20250331005512173.png" alt="image-20250331005512173" style="zoom:50%;" />
+
+> 欢迎在评论区补充! (或许应该迁移到共享文档来方便协作)
