@@ -1,7 +1,10 @@
 /docs/test
-/.vscode
-/.obsidian
+.vscode
+.obsidian
 .DS_Store
 
 # 虚拟环境
 /blog
+
+# build
+site/
