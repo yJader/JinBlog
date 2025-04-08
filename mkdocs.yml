@@ -88,6 +88,7 @@ nav:
                   - blog/index.md
 
 theme:
+        logo: "assests/jade_light.svg"
         font:
                 text: Roboto
                 code: Roboto Mono
