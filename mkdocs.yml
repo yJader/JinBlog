@@ -58,6 +58,10 @@ nav:
                   - 人机交互:
                             - "人机交互": fzu_cs_course/人机交互/复习课件 MD Ver.md
                             - "人机交互考点": fzu_cs_course/人机交互/缩减版.md
+                  - 毕业设计:
+                            - "毕业设计要求整理": fzu_cs_course/毕业设计/毕设要求整理.md
+                            - "FZU-Undergraduate-Thesis": fzu_cs_course/毕业设计/FZU-Undergraduate-Thesis.md
+                            - "FZU-SINTEF-Beamer-Template": fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.md
         - CSDIY公开课:
                   - CS224W图机器学习:
                             - csdiy/CS224w图机器学习/README.md
