@@ -1,9 +1,9 @@
-import sys
 import re
 import glob
+import typer
 
 
-def transfer_mark(filename):
+def transfer_mark(filename, verbose=True):
     with open(filename, "r", encoding="utf-8") as file:
         if file is None:
             print(f"File {filename} is empty or does not exist.")
@@ -70,41 +70,65 @@ def transfer_mark(filename):
 
     # 总结修改情况
     if original_content != content:
-        print(f"Transferred file: {filename}")
+        if verbose:
+            print(f"Transferred file: {filename}")
 
-        # 分类报告
-        true_errors = changes["latex_space"]  # 真正的语法错误
-        format_optimizations = (
-            changes["mark_syntax"]
-            + changes["latex_newline"]
-            + changes["latex_surrounding"]
-            + changes["latex_internal"]
-        )  # 格式优化
+            # 分类报告
+            true_errors = changes["latex_space"]  # 真正的语法错误
+            format_optimizations = (
+                changes["mark_syntax"]
+                + changes["latex_newline"]
+                + changes["latex_surrounding"]
+                + changes["latex_internal"]
+            )  # 格式优化
 
-        print(f"修复了 {true_errors} 处语法错误")
-        print(f"进行了 {format_optimizations} 处格式优化")
+            print(f"修复了 {true_errors} 处语法错误")
+            print(f"进行了 {format_optimizations} 处格式优化")
 
-        # 详细报告
-        print("详细修改统计:")
-        if changes["mark_syntax"] > 0:
-            print(f"  - 高亮语法转换: {changes['mark_syntax']} 处")
-        if changes["latex_space"] > 0:
-            print(f"  - LaTeX公式空格修复: {changes['latex_space']} 处")
-        if changes["latex_newline"] > 0:
-            print(f"  - LaTeX块间换行优化: {changes['latex_newline']} 处")
-        if changes["latex_surrounding"] > 0:
-            print(f"  - LaTeX块前后换行规范化: {changes['latex_surrounding']} 处")
-        if changes["latex_internal"] > 0:
-            print(f"  - LaTeX块内部换行规范化: {changes['latex_internal']} 处")
+            # 详细报告
+            print("详细修改统计:")
+            if changes["mark_syntax"] > 0:
+                print(f"  - 高亮语法转换: {changes['mark_syntax']} 处")
+            if changes["latex_space"] > 0:
+                print(f"  - LaTeX公式空格修复: {changes['latex_space']} 处")
+            if changes["latex_newline"] > 0:
+                print(f"  - LaTeX块间换行优化: {changes['latex_newline']} 处")
+            if changes["latex_surrounding"] > 0:
+                print(f"  - LaTeX块前后换行规范化: {changes['latex_surrounding']} 处")
+            if changes["latex_internal"] > 0:
+                print(f"  - LaTeX块内部换行规范化: {changes['latex_internal']} 处")
+        else:
+            print(f"✓ {filename}")
     else:
-        print(f"文件 {filename} 没有需要修改的内容")
+        if verbose:
+            print(f"文件 {filename} 没有需要修改的内容")
+        else:
+            print(f"- {filename}")
+
+
+def main(
+    pattern: str = typer.Argument(
+        ..., help="文件名模式，支持 glob 通配符 (例如: '*.md' 或 'docs/*.md')"
+    ),
+    verbose: bool = typer.Option(
+        True, "--verbose/--quiet", "-v/-q", help="是否显示详细输出信息"
+    ),
+):
+    """
+    转换 Markdown 文件的格式：\n
+    - 将 ==text== 高亮语法转换为 <mark>text</mark> \n
+    - 修复 LaTeX 公式中的空格问题 \n
+    - 优化 LaTeX 块的换行格式 \n
+    """
+    filenames = glob.glob(pattern)
+
+    if not filenames:
+        typer.echo(f"没有找到匹配模式 '{pattern}' 的文件", err=True)
+        raise typer.Exit(1)
+
+    for filename in filenames:
+        transfer_mark(filename, verbose=verbose)
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python transfer_mark.py <filename>")
-        sys.exit(1)
-
-    filenames = glob.glob(sys.argv[1])
-    for filename in filenames:
-        transfer_mark(filename)
+    typer.run(main)
