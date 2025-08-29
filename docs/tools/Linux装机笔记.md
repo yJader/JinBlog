@@ -10,6 +10,8 @@ comments: true
 
 > 以Ubuntu为例
 
+[TOC]
+
 ## 基本环境配置
 
 ### 换源
@@ -39,8 +41,6 @@ p
 ```shell
 sudo apt install vim git
 ```
-
-
 
 ### SSH配置
 
@@ -80,9 +80,8 @@ sudo systemctl enable ssh
 
    - 二编: server真的需要吗?
 
-
    ```bash
-   sudo ssh-keygen
+   ssh-keygen
    ```
 
 2. 将client生成的公钥(默认位于`/user/username/.ssh/id_rsa.pub`文件夹内) 拷贝到server的`/home/.ssh/authorized_keys`(也可能在`/home/your_username/.ssh/authorized_keys`)中
@@ -106,11 +105,33 @@ sudo apt install build-essential
 sudo apt install net-tools
 ```
 
+### git配置
 
+```bash
+# 自动将新分支推送到同名远程分支并设置 upstream
+git config --global push.default current
+# 创建新分支时自动关联上游
+git config --global branch.autoSetupMerge always
+```
 
-## ZSH终端
+## 用户管理
 
-### 安装 Zsh
+```shell
+# 创建用户, 并为他设置用户主目录
+sudo useradd <username>
+
+# 设置密码
+sudo passwd <username>
+
+# 添加sudo权限
+sudo usermod -aG sudo <username>
+```
+
+## 命令行工具
+
+### ZSH
+
+#### 安装 Zsh
 
 ```bash
 # 安装 Zsh
@@ -120,7 +141,7 @@ sudo apt install zsh
 chsh -s /bin/zsh
 ```
 
-### 安装 Oh My Zsh框架
+#### 安装 Oh My Zsh框架
 
 ```bash
 # 安装 Oh My Zsh
@@ -133,11 +154,10 @@ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh
 bash ./install.sh
 ```
 
-
-
-### 安装Powerlevel10k 主题
+#### 安装Powerlevel10k 主题
 
 ```shell
+# 官方镜像
 git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 vim ~/.zshrc
 # ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -147,11 +167,11 @@ vim ~/.zshrc
   - 想要重新配置, 删除`~/.p10k.zsh`
   - 或者 `p10k configure`
 
-### 抄来的插件配置
+#### 抄来的插件配置
 
 > [常用的oh-my-zsh插件 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/61447507) 选了一些个人常用的
 
-#### zsh-autosuggestions
+##### zsh-autosuggestions
 
 [官网](https://link.zhihu.com/?target=https%3A//github.com/zsh-users/zsh-autosuggestions)，非常好用的一个插件，会记录你之前输入过的所有命令，并且自动匹配你可能想要输入命令，然后按→补全
 
@@ -161,24 +181,86 @@ vim ~/.zshrc
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-#### zsh-syntax-highlighting
+##### zsh-syntax-highlighting
 
 [官网](https://link.zhihu.com/?target=https%3A//github.com/zsh-users/zsh-syntax-highlighting)，命令太多，有时候记不住，等输入完了才知道命令输错了，这个插件直接在输入过程中就会提示你，当前命令是否正确，错误红色，正确绿色
 
 ```shell
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# image
+git clone https://gitee.com/minhanghuang/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
-#### sudo
+##### sudo
 
 直接在插件列表中添加, 无需下载
 
-#### 启用
+##### 启用插件
+
+```zsh
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
 
 `vim ~/.zshrc` 查找 `plugins` 在括号中添加插件列表
 
 ```
 sudo zsh-autosuggestions zsh-syntax-highlighting
+```
+
+### 备份配置 - chezmoi
+
+## Github Cli
+
+<https://github.com/cli/cli?tab=readme-ov-file#installation>
+
+```bash
+(type -p wget >/dev/null || (sudo apt update && sudo apt-get install wget -y)) \
+ && sudo mkdir -p -m 755 /etc/apt/keyrings \
+        && out=$(mktemp) && wget -nv -O$out https://cli.github.com/packages/githubcli-archive-keyring.gpg \
+        && cat $out | sudo tee /etc/apt/keyrings/githubcli-archive-keyring.gpg > /dev/null \
+ && sudo chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg \
+ && echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
+ && sudo apt update \
+ && sudo apt install gh -y
+```
+
+## Conda
+
+> 先放一个官方文档: [Installing Miniconda - Anaconda](https://www.anaconda.com/docs/getting-started/miniconda/install), 建议先看官方文档, 以下为偷懒用摘抄
+
+```shell
+cd ~
+
+# 下载, shell较大, 注意网络环境配置
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+bash ~/Miniconda3-latest-Linux-x86_64.sh
+```
+
+值得注意的是这个配置项
+
+```
+Do you wish to update your shell profile to automatically initialize conda?
+This will activate conda on startup and change the command prompt when activated.
+If you'd prefer that conda's base environment not be activated on startup,
+   run the following command when conda is activated:
+
+conda config --set auto_activate_base false
+
+You can undo this by running `conda init --reverse $SHELL`? [yes|no]
+[no] >>> 
+```
+
+- 不是很推荐在shell启动时就激活base环境, 会严重拖慢shell启动速度
+  - vscode选择需要的虚拟环境的解释器即可完成这个功能
+- 默认是no, 挺不错
+
+最后测试一下是否安装成功
+
+```shell
+conda --version
 ```
 
 ## Docker
@@ -204,11 +286,11 @@ sudo zsh-autosuggestions zsh-syntax-highlighting
      sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
    sudo apt-get update
    ```
-   
+
    > **Note**
    >
    > If you use an Ubuntu derivative distro, such as Linux Mint, you may need to use `UBUNTU_CODENAME` instead of `VERSION_CODENAME`.
-   
+
 2. Install the Docker packages.
 
    (Latest Specific version)
@@ -216,7 +298,9 @@ sudo zsh-autosuggestions zsh-syntax-highlighting
    To install the latest version, run:
 
    ```shell
+
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
    ```
 
 3. Verify that the Docker Engine installation is successful by running the `hello-world` image.
@@ -224,10 +308,8 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
    ```shell
    sudo docker run hello-world
    ```
-   
-   This command downloads a test image and runs it in a container. When the container runs, it prints a confirmation message and exits.
 
-   
+   This command downloads a test image and runs it in a container. When the container runs, it prints a confirmation message and exits.
 
 ## 远程桌面
 
@@ -343,8 +425,6 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
    sudo reboot
    ```
 
-   
-
 ### 使用 VNC Viewer 连接到桌面
 
 现在，你可以使用 VNC Viewer 连接到你的 Ubuntu 机器。以下是使用 RealVNC Viewer 的步骤：
@@ -422,13 +502,11 @@ x0vncserver -display :0 -rfbauth ~/.vnc/passwd -rfbport 5900
    sudo systemctl start x0vncserver.service
    ```
 
-
-
 ## 一些问题
 
 ### 重启后没网
 
->  [怎么解决在vmware虚拟机下ubuntu linux系统重启后不能联网的问题_Engineer-Bruce_Yang的博客-CSDN博客](https://blog.csdn.net/morixinguan/article/details/118886890)
+> [怎么解决在vmware虚拟机下ubuntu linux系统重启后不能联网的问题_Engineer-Bruce_Yang的博客-CSDN博客](https://blog.csdn.net/morixinguan/article/details/118886890)
 
 问题情况: 重启后网络图标消失, 无法联网
 
@@ -441,6 +519,3 @@ service NetworkManager stop
 sudo rm /var/lib/NetworkManager/NetworkManager.state
 service NetworkManager start
 ```
-
-
-
