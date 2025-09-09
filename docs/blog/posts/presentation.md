@@ -1,7 +1,8 @@
 ---
 date:
   created: 2024-06-09
-  updated: 2024-06-09
+  updated: 2024-09-09
+description: 使用纯文本制作演示文稿的优缺点及工具推荐
 categories:
   - 杂项
 comments: true 
@@ -57,7 +58,7 @@ typst与LaTeX相似, 都是基于纯文本的排版系统, 使用rust编写, 很
 
 **缺点**:
 
-- 尽管简化了语法, 但是LaTeX在科研届更常用, 额外多学一个有些没必要了...
+- 尽管简化了语法, 但是LaTeX在科研界更常用, 额外多学一个有些没必要了...
 - 模板相对LaTeX较少
 
 ### Markdown-Marp
@@ -67,19 +68,24 @@ Marp是一个基于Markdown的演示文稿制作工具, 具有以下优点:
 - **简单易用**: 使用Markdown语法编写, 上手快, 适合快速制作演示文稿
 - **跨平台**: Marp for VS Code可以在任何支持VSCode的操作系统上运行, 生成的HTML和PDF文件可以在任何浏览器和PDF阅读器上查看
 - **版本控制**: 使用文本文件编写, 方便使用Git等版本控制工具进行管理
+- **便于LLM生成和编辑**: 没有在Markdown和html语法上做过多改造, LLM可以很好地理解和生成
 
 ## 放映方式
 
-### 基于PDF的方式
+### 基于PDF的演讲者视图
 
 1. **MacOS用户限定**：使用 [Présentation.app](http://iihm.imag.fr/blanch/software/osx-presentation)
    - 提供了演示者视图，可以显示PDF中的注释
-2. 使用基于Py的
-3. 将PDF转为纯图的PowerPoint
+2. 使用基于Python的 [pympress](https://github.com/Cimbali/pympress)
+
+### 转为PowerPoint
+
+1. 将PDF转为纯图的PowerPoint
     - 可以使用我编写的 [pdf2pptx脚本](https://github.com/yJader/pdf2pptx) 或其他类似工具
     - 将生成的PDF转换为PowerPoint格式，利用PowerPoint的演讲者模式显示备注
+2. 针对Marp, 可以直接选择导出为PowerPoint格式
+    - 使用`<!-- 演讲内容 -->`可以添加备注, 导出为pptx时会自动识别并添加到备注中
 
+备注: Marp 不能直接通过VS Code放映, sad :(
 > <https://github.com/marp-team/marp-vscode/issues/87>
 > We understand requests for this feature, but since the Marp for VS Code extension is primary designed for previewing the appearance of slides, currently there are no plans to work on this by Marp team. We are very cautious about doing that because it could potentially cause scope creep.
-
-Marp 不能直接通过VS Code放映, sad :(
