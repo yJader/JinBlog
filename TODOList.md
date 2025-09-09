@@ -1,5 +1,12 @@
 # 博客搭建 TODOList
 
+## 便捷管理
+
+通过symlink在docs中创建链接, 链接到笔记文件夹
+平时在笔记文件夹中编辑, 在完成一段后回到Blog仓库进行格式检查(同时反映到笔记原文件上), commit, push
+
+- Q: 在我的多设备环境下, 链接是否会带来一些bug?(如git存储链接而非链接背后的实际文件)
+
 ## 格式显示bug
 
 - [x] [高亮](#高亮): 已集成到tools/transferMD/transfer.py
