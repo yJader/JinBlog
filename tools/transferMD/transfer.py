@@ -1,6 +1,9 @@
-import re
 import glob
+import re
+
 import typer
+
+app = typer.Typer(help="Markdown 格式转换工具")
 
 
 def transfer_mark(filename, verbose=True):
@@ -106,7 +109,8 @@ def transfer_mark(filename, verbose=True):
             print(f"- {filename}")
 
 
-def main(
+@app.command()
+def transfer(
     pattern: str = typer.Argument(
         ..., help="文件名模式，支持 glob 通配符 (例如: '*.md' 或 'docs/*.md')"
     ),
@@ -115,10 +119,10 @@ def main(
     ),
 ):
     """
-    转换 Markdown 文件的格式：\n
-    - 将 ==text== 高亮语法转换为 <mark>text</mark> \n
-    - 修复 LaTeX 公式中的空格问题 \n
-    - 优化 LaTeX 块的换行格式 \n
+    转换 Markdown 文件的格式：
+    - 将 ==text== 高亮语法转换为 <mark>text</mark>
+    - 修复 LaTeX 公式中的空格问题
+    - 优化 LaTeX 块的换行格式
     """
     filenames = glob.glob(pattern)
 
@@ -130,5 +134,19 @@ def main(
         transfer_mark(filename, verbose=verbose)
 
 
+def main(
+    pattern: str = typer.Argument(
+        ..., help="文件名模式，支持 glob 通配符 (例如: '*.md' 或 'docs/*.md')"
+    ),
+    verbose: bool = typer.Option(
+        True, "--verbose/--quiet", "-v/-q", help="是否显示详细输出信息"
+    ),
+):
+    """
+    转换 Markdown 文件的格式（兼容性函数）
+    """
+    transfer(pattern, verbose)
+
+
 if __name__ == "__main__":
-    typer.run(main)
+    app()
