@@ -5,6 +5,7 @@
 """
 
 import shutil
+import sys
 from pathlib import Path
 from typing import Optional
 
@@ -14,6 +15,11 @@ from rich.panel import Panel
 from rich.progress import Progress, SpinnerColumn, TextColumn
 from rich.prompt import Confirm
 from rich.table import Table
+
+# 添加父目录到路径以导入 transferMD
+current_dir = Path(__file__).parent
+tools_dir = current_dir.parent
+sys.path.insert(0, str(tools_dir))
 
 app = typer.Typer(help="笔记复制工具 - 在工作区间复制笔记文件夹")
 console = Console()
@@ -91,6 +97,33 @@ def find_md_files_in_directory(directory: Path) -> list[Path]:
     return sorted(md_files)
 
 
+def transfer_markdown_file(file_path: Path, verbose: bool = False) -> bool:
+    """
+    对单个 Markdown 文件执行格式转换
+    返回是否进行了修改
+    """
+    try:
+        # 动态导入 transfer 模块
+        from transferMD.transfer import transfer_mark
+
+        # 读取原始内容
+        with open(file_path, "r", encoding="utf-8") as f:
+            original_content = f.read()
+
+        # 执行转换
+        transfer_mark(str(file_path), verbose=verbose)
+
+        # 检查是否有修改
+        with open(file_path, "r", encoding="utf-8") as f:
+            new_content = f.read()
+
+        return original_content != new_content
+
+    except Exception as e:
+        console.print(f"[yellow]警告: 转换文件 {file_path.name} 时出错: {e}[/yellow]")
+        return False
+
+
 @app.command()
 def copy(
     source: str = typer.Argument(..., help="源笔记文件或文件夹路径"),
@@ -103,6 +136,12 @@ def copy(
     ),
     force: bool = typer.Option(False, "--force", "-f", help="强制覆盖已存在的文件"),
     dry_run: bool = typer.Option(False, "--dry-run", "-d", help="预览操作，不实际执行"),
+    no_transfer: bool = typer.Option(
+        False, "--no-transfer", help="跳过复制前的 Markdown 格式转换"
+    ),
+    transfer_verbose: bool = typer.Option(
+        False, "--transfer-verbose", help="显示格式转换的详细信息"
+    ),
 ) -> None:
     """
     复制笔记文件和对应的 assets 文件夹到目标位置
@@ -111,10 +150,17 @@ def copy(
     - 单个 Markdown 文件：复制该文件和对应的 assets 文件夹
     - 文件夹：复制文件夹内所有 Markdown 文件和对应的 assets 文件夹
 
+    功能特性：
+    - 自动修复 Markdown 格式问题（可用 --no-transfer 跳过）
+    - 支持文件重命名（仅单文件模式）
+    - 强制覆盖已存在文件
+    - 预览模式查看操作
+
     示例:
         copy_notes copy "/path/to/source/note.md" "/path/to/target/folder"
         copy_notes copy "/path/to/source/note.md" "/path/to/target/folder" --rename "new_name"
         copy_notes copy "/path/to/source/folder" "/path/to/target/folder"
+        copy_notes copy "/path/to/source/folder" "/path/to/target/folder" --no-transfer
     """
 
     # 转换为 Path 对象
@@ -262,6 +308,43 @@ def copy(
     try:
         console.print("\n[green]🚀 开始复制操作...[/green]")
 
+        # 第一步：格式转换（如果启用）
+        if not no_transfer:
+            console.print("\n[cyan]📝 执行 Markdown 格式转换...[/cyan]")
+            transfer_success_count = 0
+            transfer_modified_count = 0
+
+            for operation in copy_operations:
+                source_file = operation["source_file"]
+
+                try:
+                    modified = transfer_markdown_file(
+                        source_file, verbose=transfer_verbose
+                    )
+                    if modified:
+                        transfer_modified_count += 1
+                        if transfer_verbose:
+                            console.print(
+                                f"[yellow]📝 已转换: {source_file.name}[/yellow]"
+                            )
+                    elif transfer_verbose:
+                        console.print(f"[dim]✓ 无需转换: {source_file.name}[/dim]")
+                    transfer_success_count += 1
+
+                except Exception as e:
+                    console.print(
+                        f"[yellow]⚠️  转换失败 {source_file.name}: {e}[/yellow]"
+                    )
+
+            if transfer_modified_count > 0:
+                console.print(
+                    f"[green]✅ 格式转换完成: {transfer_modified_count}/{transfer_success_count} 个文件已修复[/green]"
+                )
+            else:
+                console.print("[green]✅ 格式检查完成: 所有文件格式正确[/green]")
+
+        # 第二步：文件复制
+        console.print("\n[blue]📁 开始文件复制...[/blue]")
         success_count = 0
         total_operations = len(copy_operations)
 
