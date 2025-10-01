@@ -7,6 +7,8 @@ categories:
 comments: true 
 ---
 
+# MkDocs踩坑记录
+
 ## Latex
 
 [MathJax(数学) - Material for MkDocs (wdk-docs.github.io)](https://wdk-docs.github.io/mkdocs-material-docs/reference/mathjax/)
@@ -49,7 +51,7 @@ extra_javascript:
 
 ## 多层次列表
 
-多层次列表(`- ` `1. `)无法正确显示
+多层次列表(`-` `1.`)无法正确显示
 
 需要添加
 
