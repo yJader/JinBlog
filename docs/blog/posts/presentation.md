@@ -85,8 +85,8 @@ typst与LaTeX相似, 都是基于纯文本的排版系统, 使用rust编写, 很
 
 ### Markdown-Marp
 
-> [!TIP]
-> 强烈推荐, 快速完成PPT, 应付汇报专用
+!!! note
+    强烈推荐, 快速完成PPT, 应付汇报专用
 
 Marp是一个基于Markdown的演示文稿制作工具, 具有以下优点:
 
