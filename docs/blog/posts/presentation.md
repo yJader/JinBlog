@@ -7,7 +7,7 @@ categories:
   - 杂项
 comments: true 
 ---
-
+<!-- markdownlint-disable MD033 -->
 # Plain Text is All You Need (for Presentations)
 
 面对课程汇报 / 学术报告 / 组会等场景, 使用演示文稿进行Presentation是常见的方式
@@ -50,6 +50,28 @@ LaTeX-[Beamer包](https://zh.wikipedia.org/zh-cn/Beamer_(LaTeX))是一个基于L
 
 - 不支持动画效果, 只能通过切换幻灯片来实现
 
+#### Beamer模板推荐
+
+- [SINTEF Presentation](https://www.overleaf.com/latex/templates/sintef-presentation/jhbhdffczpnx)
+- [College Beamer](https://github.com/liu-qilong/college-beamer): 基于SINTEF Presentation修改, 适配了不同学校的模板合集
+- [FZU-SINTEF-Beamer-Template](https://github.com/yJader/FZU-SINTEF-Beamer-Template): 基于SINTEF Presentation修改, 适配了福州大学的模板, 我在毕设答辩最终选择这个模板进行演示
+
+<p align="center">
+  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0001.jpg" alt="Beamer Template Preview Page 1" width="45%"/>
+  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0019.jpg" alt="Beamer Template Preview Page 19" width="45%"/>
+</p>
+<p align="center">
+  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0012.jpg" alt="Beamer Template Preview Page 12" width="45%"/>
+  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0002.jpg" alt="Beamer Template Preview Page 2" width="45%"/>
+</p>
+<p align="center">
+  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0020.jpg" alt="Beamer Template Preview Page 20" width="45%"/>
+  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0021.jpg" alt="Beamer Template Preview Page 21" width="45%"/>
+</p>
+<p align="center">
+  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0026.jpg" alt="Beamer Template Preview Page 26" width="45%"/>
+</p>
+
 ### Typst-touying
 
 > [**touying: A powerful package for creating presentation slides in Typst.**](https://typst.app/universe/package/touying/)
@@ -63,12 +85,22 @@ typst与LaTeX相似, 都是基于纯文本的排版系统, 使用rust编写, 很
 
 ### Markdown-Marp
 
+> [!TIP]
+> 强烈推荐, 快速完成PPT, 应付汇报专用
+
 Marp是一个基于Markdown的演示文稿制作工具, 具有以下优点:
 
 - **简单易用**: 使用Markdown语法编写, 上手快, 适合快速制作演示文稿
 - **跨平台**: Marp for VS Code可以在任何支持VSCode的操作系统上运行, 生成的HTML和PDF文件可以在任何浏览器和PDF阅读器上查看
 - **版本控制**: 使用文本文件编写, 方便使用Git等版本控制工具进行管理
 - **便于LLM生成和编辑**: 没有在Markdown和html语法上做过多改造, LLM可以很好地理解和生成
+
+面对高强度的交流汇报需求, 我现在也迁移到了Marp, 搭配上Awesome-Marp模板后, 能达到Beamer模板的效果
+
+#### 模板推荐
+
+- [Awesome Marp](https://github.com/favourhong/Awesome-Marp): 原始的Awesome Marp模板, 但是官方使用的是有衬线字体, 感觉不适合演示
+- [Awesome Marp XMU](https://github.com/yJader/Awesome-Marp-XMU): 基于Awesome Marp修改, 修复了一些bug, 同时适配了厦门大学的模板
 
 ## 放映方式
 
