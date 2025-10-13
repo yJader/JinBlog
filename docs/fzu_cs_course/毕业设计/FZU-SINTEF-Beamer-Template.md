@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD033 -->
 # 基于sintef主题的福州大学LaTeX幻灯片模板 (FZU-SINTEF-Beamer-Template)
 >
 > copy from [FZU-SINTEF-Beamer-Template](https://github.com/yJader/FZU-SINTEF-Beamer-Template)
@@ -25,22 +26,22 @@ TODO:
 > [预览文件](./FZU-SINTEF-Beamer-Template-Preview.pdf)
 
 <p align="center">
-  <img src="./FZU-SINTEF-Beamer-Template.assets/preview_page-0001.jpg" width="45%"/>
-  <img src="./FZU-SINTEF-Beamer-Template.assets/preview_page-0019.jpg" width="45%"/>
+  <img src="./FZU-SINTEF-Beamer-Template.assets/preview_page-0001.jpg" alt="Beamer Template Preview Page 1" width="45%"/>
+  <img src="./FZU-SINTEF-Beamer-Template.assets/preview_page-0019.jpg" alt="Beamer Template Preview Page 19" width="45%"/>
 </p>
 <p align="center">
-  <img src="./FZU-SINTEF-Beamer-Template.assets/preview_page-0012.jpg" width="45%"/>
-  <img src="./FZU-SINTEF-Beamer-Template.assets/preview_page-0002.jpg" width="45%"/>
+  <img src="./FZU-SINTEF-Beamer-Template.assets/preview_page-0012.jpg" alt="Beamer Template Preview Page 12" width="45%"/>
+  <img src="./FZU-SINTEF-Beamer-Template.assets/preview_page-0002.jpg" alt="Beamer Template Preview Page 2" width="45%"/>
 </p>
 
 - 注: 右上角蓝色块是演讲者备注，实际演示时不会(不应该)显示。详见[关于演讲者视图](#关于演讲者视图)。
 
 <p align="center">
-  <img src="./README.assets/preview_page-0020.jpg" width="45%"/>
-  <img src="./README.assets/preview_page-0021.jpg" width="45%"/>
+  <img src="./README.assets/preview_page-0020.jpg" alt="Beamer Template Preview Page 20" width="45%"/>
+  <img src="./README.assets/preview_page-0021.jpg" alt="Beamer Template Preview Page 21" width="45%"/>
 </p>
 <p align="center">
-  <img src="./README.assets/preview_page-0026.jpg" width="45%"/>
+  <img src="./README.assets/preview_page-0026.jpg" alt="Beamer Template Preview Page 26" width="45%"/>
 </p>
 
 ## 快速开始
