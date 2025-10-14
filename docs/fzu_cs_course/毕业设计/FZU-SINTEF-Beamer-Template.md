@@ -37,11 +37,11 @@ TODO:
 - 注: 右上角蓝色块是演讲者备注，实际演示时不会(不应该)显示。详见[关于演讲者视图](#关于演讲者视图)。
 
 <p align="center">
-  <img src="./README.assets/preview_page-0020.jpg" alt="Beamer Template Preview Page 20" width="45%"/>
-  <img src="./README.assets/preview_page-0021.jpg" alt="Beamer Template Preview Page 21" width="45%"/>
+  <img src="./FZU-SINTEF-Beamer-Template.assets/preview_page-0020.jpg" alt="Beamer Template Preview Page 20" width="45%"/>
+  <img src="./FZU-SINTEF-Beamer-Template.assets/preview_page-0021.jpg" alt="Beamer Template Preview Page 21" width="45%"/>
 </p>
 <p align="center">
-  <img src="./README.assets/preview_page-0026.jpg" alt="Beamer Template Preview Page 26" width="45%"/>
+  <img src="./FZU-SINTEF-Beamer-Template.assets/preview_page-0026.jpg" alt="Beamer Template Preview Page 26" width="45%"/>
 </p>
 
 ## 快速开始
