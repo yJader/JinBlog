@@ -57,19 +57,19 @@ LaTeX-[Beamer包](https://zh.wikipedia.org/zh-cn/Beamer_(LaTeX))是一个基于L
 - [FZU-SINTEF-Beamer-Template](https://github.com/yJader/FZU-SINTEF-Beamer-Template): 基于SINTEF Presentation修改, 适配了福州大学的模板, 我在毕设答辩最终选择这个模板进行演示
 
 <p align="center">
-  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0001.jpg" alt="Beamer Template Preview Page 1" width="45%"/>
-  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0019.jpg" alt="Beamer Template Preview Page 19" width="45%"/>
+  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0001.jpg" alt="Beamer Template Preview Page 1" width="45%" onerror="this.onerror=null;this.src='../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0001.jpg'"/>
+  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0019.jpg" alt="Beamer Template Preview Page 19" width="45%" onerror="this.onerror=null;this.src='../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0019.jpg'"/>
 </p>
 <p align="center">
-  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0012.jpg" alt="Beamer Template Preview Page 12" width="45%"/>
-  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0002.jpg" alt="Beamer Template Preview Page 2" width="45%"/>
+  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0012.jpg" alt="Beamer Template Preview Page 12" width="45%" onerror="this.onerror=null;this.src='../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0012.jpg'"/>
+  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0002.jpg" alt="Beamer Template Preview Page 2" width="45%" onerror="this.onerror=null;this.src='../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0002.jpg'"/>
 </p>
 <p align="center">
-  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0020.jpg" alt="Beamer Template Preview Page 20" width="45%"/>
-  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0021.jpg" alt="Beamer Template Preview Page 21" width="45%"/>
+  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0020.jpg" alt="Beamer Template Preview Page 20" width="45%" onerror="this.onerror=null;this.src='../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0020.jpg'"/>
+  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0021.jpg" alt="Beamer Template Preview Page 21" width="45%" onerror="this.onerror=null;this.src='../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0021.jpg'"/>
 </p>
 <p align="center">
-  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0026.jpg" alt="Beamer Template Preview Page 26" width="45%"/>
+  <img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0026.jpg" alt="Beamer Template Preview Page 26" width="45%" onerror="this.onerror=null;this.src='../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0026.jpg'"/>
 </p>
 
 ### Typst-touying
