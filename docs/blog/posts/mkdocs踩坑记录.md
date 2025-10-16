@@ -49,7 +49,7 @@ extra_javascript:
 
 ## 多层次列表
 
-多层次列表(`- ` `1. `)无法正确显示
+多层次列表(`-` `1.`)无法正确显示
 
 需要添加
 
@@ -158,6 +158,58 @@ test
 
 1. 不要熬夜改 bug, 会变得神志不清
 2. 早该上 StackoverFlow 搜的 QAQ
+
+## 博客(blog/posts)引用图片资源出错
+
+### 问题描述
+
+在presentation.md中, 我为了节约空间, 引用了fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0001.jpg等图片
+文件树如下
+
+```text
+docs
+├── blog
+│   ├── index.md
+│   └── posts
+│       └── presentation.md
+└── fzu_cs_course
+    └── 毕业设计
+        └── FZU-SINTEF-Beamer-Template.assets
+            ├── preview_page-0001.jpg
+            └── ...
+```
+
+在presentation.md使用的相对路径引用为`../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0001.jpg`
+但是部署到服务器后, 图片无法显示
+
+### 分析
+
+检查编译出的`site/blog`可以发现文件夹结构发生了改变
+
+```text
+site
+├── blog
+│   └── presentation.html # 没有posts文件夹了
+└── fzu_cs_course
+    └── 毕业设计
+        └── FZU-SINTEF-Beamer-Template.assets
+            ├── preview_page-0001.jpg
+            └── ...
+```
+
+最终导致了相对路径解析出错
+
+### 解决方案
+
+用onerror事件来处理, 在解析错误时更换为正确的相对路径
+
+```html
+<img src="../../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0001.jpg" 
+  alt="Beamer Template Preview Page 1" 
+  width="45%" 
+  onerror="this.onerror=null;this.src='../fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.assets/preview_page-0001.jpg'"
+/>
+```
 
 ## Blog 配置
 
