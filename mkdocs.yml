@@ -99,7 +99,7 @@ nav:
         - 工具分享:
                   - "Windows装机笔记(附软件推荐)": tools/Windows装机笔记(附软件推荐).md
                   - "Linux装机笔记": tools/Linux装机笔记.md
-        - 博客随笔:
+        - Blog:
                   - blog/index.md
 
 theme:
@@ -206,8 +206,8 @@ plugins:
         - blog:
                   blog_toc: true
                   post_excerpt: required
-                  archive: false
-                  categories_name: tags
+                  #   archive: false
+                  #   categories_name: tags
                   pagination_per_page: 5
                   post_url_format: "{slug}" # 博客url格式
 
