@@ -62,6 +62,13 @@ nav:
                             - "毕业设计要求整理": fzu_cs_course/毕业设计/毕设要求整理.md
                             - "FZU-Undergraduate-Thesis": fzu_cs_course/毕业设计/FZU-Undergraduate-Thesis.md
                             - "FZU-SINTEF-Beamer-Template": fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.md
+        - DL-LLM:
+                  - 博客学习:
+                            - vLLM深入研究：一个高吞吐量 LLM 推理系统的剖析: dl_llm/Inside vLLM Anatomy of a High-Throughput LLM Inference System.md
+                  - "CMU10-414/714: Deep Learning Systems":
+                            - csdiy/CMU 10-414 Deep Learning Systems/README.md
+                            - "Course Notes": csdiy/CMU 10-414 Deep Learning Systems/10-414_深度学习系统课程笔记.md
+                            - "Homework Notes": csdiy/CMU 10-414 Deep Learning Systems/10-414 Homework笔记.md
         - CSDIY公开课:
                   - "CMU10-414/714: Deep Learning Systems":
                             - csdiy/CMU 10-414 Deep Learning Systems/README.md
