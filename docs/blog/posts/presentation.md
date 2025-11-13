@@ -1,7 +1,7 @@
 ---
 date:
   created: 2024-06-09
-  updated: 2024-09-09
+  updated: 2025-11-13
 description: 使用纯文本制作演示文稿的优缺点及工具推荐
 categories:
   - 杂项
@@ -106,9 +106,16 @@ Marp是一个基于Markdown的演示文稿制作工具, 具有以下优点:
 
 ### 基于PDF的演讲者视图
 
+放映工具:
+
 1. **MacOS用户限定**：使用 [Présentation.app](http://iihm.imag.fr/blanch/software/osx-presentation)
-   - 提供了演示者视图，可以显示PDF中的注释
 2. 使用基于Python的 [pympress](https://github.com/Cimbali/pympress)
+
+演讲者视图:
+
+1. 对于beamer: 使用`\pdfnote{"备注内容"}`添加备注
+2. 对于Marp: 参考[Apply metadata and presenter notes to PDF \#369](https://github.com/marp-team/marp-cli/pull/369), 使用`<!-- 演讲内容 -->`添加备注, 并在导出时添加`--pdf-notes`参数
+    - 注: 对于Marp for VS Code, 需要在设置中开启`markdown.marp.pdf.noteAnnotations`选项
 
 ### 转为PowerPoint
 
