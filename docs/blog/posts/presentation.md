@@ -113,17 +113,18 @@ Marp是一个基于Markdown的演示文稿制作工具, 具有以下优点:
 
 演讲者视图:
 
-1. 对于beamer: 使用`\pdfnote{"备注内容"}`添加备注
-2. 对于Marp: 参考[Apply metadata and presenter notes to PDF \#369](https://github.com/marp-team/marp-cli/pull/369), 使用`<!-- 演讲内容 -->`添加备注, 并在导出时添加`--pdf-notes`参数
-    - 注: 对于Marp for VS Code, 需要在设置中开启`markdown.marp.pdf.noteAnnotations`选项
+- 对于beamer: 使用`\pdfnote{"备注内容"}`添加备注
+- 对于Marp: 参考[Apply metadata and presenter notes to PDF \#369](https://github.com/marp-team/marp-cli/pull/369), 使用`<!-- 演讲内容 -->`添加备注, 并在导出时添加`--pdf-notes`参数
+  - 注: 对于Marp for VS Code, 需要在设置中开启`markdown.marp.pdf.noteAnnotations`选项
 
 ### 转为PowerPoint
 
-1. 将PDF转为纯图的PowerPoint
-    - 可以使用我编写的 [pdf2pptx脚本](https://github.com/yJader/pdf2pptx) 或其他类似工具
-    - 将生成的PDF转换为PowerPoint格式，利用PowerPoint的演讲者模式显示备注
-2. 针对Marp, 可以直接选择导出为PowerPoint格式
-    - 使用`<!-- 演讲内容 -->`可以添加备注, 导出为pptx时会自动识别并添加到备注中
+- 将PDF转为纯图的PowerPoint
+  - 可以使用我编写的 [pdf2pptx脚本](https://github.com/yJader/pdf2pptx) 或其他类似工具
+  - 将生成的PDF转换为PowerPoint格式，利用PowerPoint的演讲者模式显示备注
+
+- 针对Marp, 可以直接选择导出为PowerPoint格式
+  - 使用`<!-- 演讲内容 -->`可以添加备注, 导出为pptx时会自动识别并添加到备注中
 
 备注: Marp 不能直接通过VS Code放映, sad :(
 > <https://github.com/marp-team/marp-vscode/issues/87>
