@@ -1,7 +1,7 @@
 ---
 date:
   created: 2024-09-25
-  updated: 2025-03-31
+  updated: 2025-11-28
 comments: true 
 ---
 
@@ -57,13 +57,24 @@ irm get.scoop.sh | iex
 加点拓展库
 
 ```shell
-# 加点扩展库
+# 添加官方扩展库
 scoop bucket add extras
+
+# 添加非官方拓展库
+# 中文软件库, 包含飞书, 钉钉, 腾讯会议, 百度云盘, utools等软件
+scoop bucket add extras-cn https://github.com/Scoopforge/Extras-CN
 ```
 
-安装
+使用scoop安装软件
+
+- 注: 可以前往[scoop官网](https://scoop.sh/#/)搜索官网包
 
 ```shell
+# 安装常用办公软件
+scoop install wechat qq-nt feishu tencent-meeting dingtalk
+
+scoop install utools neteasemusic
+
 # 安装github client
 scoop install gh
 
