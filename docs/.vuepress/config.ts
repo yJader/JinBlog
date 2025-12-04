@@ -21,7 +21,8 @@ export default defineUserConfig({
 
   pagePatterns: [
     '**/*.md',
-    '!docs/backend/**', // 排除 backend 目录
+    '!backend/**', // 排除 backend 目录
+    '!test/**',    // 排除 test 目录
   ],
 
   head: [
