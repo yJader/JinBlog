@@ -30,11 +30,11 @@ const blog = defineCollection({
   // post 类型，这里用于实现 博客功能
   type: 'post',
   // 文档集合所在目录，相对于 `docs`
-  dir: 'blog',
+  dir: 'blog/posts',
   // 文档标题，它将用于在页面的面包屑导航中显示
   title: 'Blog',
   // 文章列表页的链接，如果 `linkPrefix` 未定义，它也将作为 相关的文章的 permalink 的前缀
-  link: '/blog/',
+  link: '/blog/posts/',
   //   linkPrefix: '/article/', // 相关文章的链接前缀
   //   postList: true, // 是否启用文章列表页
   //   tags: true, // 是否启用标签页
@@ -50,6 +50,7 @@ const FZUCSCourse = defineCollection({
   linkPrefix: '/fzu_cs_course',
   title: 'FZU CS课程',
   sidebar: 'auto',
+  sidebarCollapsed: true,
 })
 
 const csdiy = defineCollection({
