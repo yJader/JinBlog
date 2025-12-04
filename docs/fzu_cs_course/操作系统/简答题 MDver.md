@@ -1,3 +1,8 @@
+---
+title: 简答题 MDver
+createTime: 2024/06/30 18:34:22
+permalink: /fzu_cs_course/xlgxem86/
+---
 # 一.  引论
 
 1. 简述分时操作系统的特征。

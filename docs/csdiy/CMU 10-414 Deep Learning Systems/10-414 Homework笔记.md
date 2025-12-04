@@ -1,3 +1,8 @@
+---
+title: 10-414 Homework笔记
+createTime: 2025/09/23 16:59:04
+permalink: /csdiy/de9w1fz5/
+---
 ## overall
 
 ### colab导入库问题

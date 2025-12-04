@@ -1,3 +1,8 @@
+---
+title: 复习提纲MAP
+createTime: 2024/06/30 18:34:22
+permalink: /fzu_cs_course/5uz4rtp8/
+---
 #  第一章 计算机系统结构概论
 
 ## 1.1 计算机系统的多级层次结构

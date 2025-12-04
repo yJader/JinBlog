@@ -1,7 +1,18 @@
+.DS_Store
+
+
+
+
+**/node_modules
+
+docs/.vuepress/.cache
+docs/.vuepress/.temp
+docs/.vuepress/dist
+
+*.log
 /docs/test
 .vscode
 .obsidian
-.DS_Store
 
 # 虚拟环境
 /blog

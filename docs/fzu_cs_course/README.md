@@ -1,3 +1,8 @@
+---
+title: FZU CS课程
+createTime: 2024/06/30 18:34:21
+permalink: /fzu_cs_course/
+---
 # FZU CS Notes
 
 > ~~男大学生自用99新笔记~~

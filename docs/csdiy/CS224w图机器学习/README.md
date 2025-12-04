@@ -1,3 +1,8 @@
+---
+title: 习
+createTime: 2025/03/14 15:49:50
+permalink: /csdiy/v6zx9hg2/
+---
 # CS224W 图机器学习笔记
 
 **课程主页**: <https://web.stanford.edu/class/cs224w>

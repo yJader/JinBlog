@@ -1,11 +1,14 @@
 ---
 date:
-  created: 2024-06-09
-  updated: 2025-11-13
+  created: 2024-06-09T00:00:00.000Z
+  updated: 2025-11-13T00:00:00.000Z
 description: 使用纯文本制作演示文稿的优缺点及工具推荐
 categories:
   - 杂项
-comments: true 
+comments: true
+title: presentation
+createTime: 2025/06/09 15:14:03
+permalink: /blog/g70sczk7/
 ---
 <!-- markdownlint-disable MD033 -->
 # Plain Text is All You Need (for Presentations)

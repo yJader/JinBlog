@@ -1,3 +1,8 @@
+---
+title: 复习课件 MD Ver
+createTime: 2024/06/30 18:35:11
+permalink: /fzu_cs_course/fvl09n2r/
+---
 1. 填空 2×5 = 10
 2. 名词 5x4 = 20
 3. 简答 10x3 = 30
