@@ -14,7 +14,7 @@ import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
-  base: '/',
+  base: '/JinBlog/',
   lang: 'zh-CN',
   title: 'JinBlog',
   description: '走在未知的道路上, 不许停也不能回头',
