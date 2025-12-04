@@ -20,6 +20,7 @@ export default defineUserConfig({
   description: '走在未知的道路上, 不许停也不能回头',
 
   pagePatterns: [
+    '**/*.md',
     '!docs/backend/**', // 排除 backend 目录
   ],
 
