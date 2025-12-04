@@ -20,7 +20,7 @@ import collections from './collections'
 export default defineThemeConfig({
   logo: '/assests/jade_light.svg',
 
-  appearance: true,  // 配置 深色模式
+  appearance: true,  // 默认为用户配色(浅色/深色)
 
   social: [
     { icon: 'github', link: 'https://github.com/yJader/JinBlog' },
