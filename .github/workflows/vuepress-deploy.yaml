@@ -3,7 +3,7 @@ name: Deploy VuePress site to GitHub Pages
 on:
     # 每当 push 到 vuepress 分支时触发部署
     push:
-        branches: [vuepress]
+        # branches: [vuepress]
     # 手动触发部署
     workflow_dispatch:
 

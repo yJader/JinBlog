@@ -49,7 +49,81 @@ const FZUCSCourse = defineCollection({
   dir: 'fzu_cs_course',
   linkPrefix: '/fzu_cs_course',
   title: 'FZU CS课程',
-  sidebar: 'auto',
+  sidebar: [
+    { text: '课程总览', link: '/fzu_cs_course/README.md' },
+    {
+      text: '数字电路与逻辑设计', collapsed: true,
+      items: 'auto',
+      prefix: '/fzu_cs_course/数字电路与逻辑设计/',
+    },
+    { text: '离散数学', link: '/fzu_cs_course/离散数学/离散数学.md', collapsed: true },
+    {
+      text: '数据结构', collapsed: true,
+      items: 'auto',
+      prefix: '/fzu_cs_course/数据结构/',
+    },
+    {
+      text: '计算机组成原理', collapsed: true,
+      items: 'auto',
+      prefix: '/fzu_cs_course/计算机组成原理/',
+    },
+    {
+      text: '计算机网络', collapsed: true,
+      items: 'auto',
+      prefix: '/fzu_cs_course/计算机网络/',
+    },
+    {
+      text: '操作系统', collapsed: true,
+      items: 'auto',
+      prefix: '/fzu_cs_course/操作系统/',
+    },
+    {
+      text: '软件工程', collapsed: true,
+      items: 'auto',
+      prefix: '/fzu_cs_course/软件工程/',
+    },
+    {
+      text: '数据库系统原理', collapsed: true,
+      items: 'auto',
+      prefix: '/fzu_cs_course/数据库系统原理/',
+    },
+    { text: '计算机图形学', link: '/fzu_cs_course/图形学/图形学.md' },
+    {
+      text: '汇编 & 接口', collapsed: true,
+      items: [
+        { text: '汇编 & 接口', link: '/fzu_cs_course/汇编&接口/汇编&接口.md' },
+        { text: '汇编模板', link: '/fzu_cs_course/汇编&接口/汇编模板.md' },
+      ],
+    },
+    { text: '劳动实践 (BearPi)', link: '/fzu_cs_course/劳动实践(BearPi)/劳动实践笔记.md' },
+    { text: '数据挖掘', link: '/fzu_cs_course/数据挖掘/数据挖掘.md' },
+    {
+      text: '计算机系统结构', collapsed: true,
+      link: '/fzu_cs_course/计算机系统结构/README.md',
+      items: [
+        { text: '课程笔记', link: '/fzu_cs_course/计算机系统结构/系统结构.md' },
+        { text: '复习提纲MAP', link: '/fzu_cs_course/计算机系统结构/复习提纲MAP.md' },
+        { text: '简答题', link: '/fzu_cs_course/计算机系统结构/简答题.md' },
+        { text: '小测选填', link: '/fzu_cs_course/计算机系统结构/小测选填.md' },
+      ],
+    },
+    { text: '编译原理', link: '/fzu_cs_course/编译原理/编译原理.md' },
+    {
+      text: '计算方法 (数值分析)', collapsed: true,
+      items: 'auto',
+      prefix: '/fzu_cs_course/计算方法(数值分析)/',
+    },
+    {
+      text: '人机交互', collapsed: true,
+      items: 'auto',
+      prefix: '/fzu_cs_course/人机交互/',
+    },
+    {
+      text: '毕业设计', collapsed: true,
+      items: 'auto',
+      prefix: '/fzu_cs_course/毕业设计/',
+    },
+  ],
   sidebarCollapsed: true,
 })
 
@@ -58,7 +132,22 @@ const csdiy = defineCollection({
   dir: 'csdiy',
   linkPrefix: '/csdiy',
   title: 'CSDIY公开课',
-  sidebar: 'auto',
+  sidebar: [
+    {
+      text: 'CMU 10-414 Deep Learning Systems', link: '/csdiy/10-414/',
+      items: [
+        { text: 'Homework笔记', link: '/csdiy/10-414-homework/' },
+        { text: '课程笔记', link: '/csdiy/10-414-notes/' },
+      ]
+    },
+    {
+      text: 'CS224W 图机器学习', link: '/csdiy/CS224w图机器学习/',
+      items: [
+        { text: '课程笔记', link: '/csdiy/CS224w图机器学习/课程笔记/' },
+        { text: '笔记源文件', link: '/csdiy/CS224w图机器学习/CS224w.pdf' }
+      ]
+    },
+  ],
 })
 
 const dlLLM = defineCollection({
@@ -66,7 +155,16 @@ const dlLLM = defineCollection({
   dir: 'dl_llm',
   linkPrefix: '/dl_llm',
   title: 'DL-LLM',
-  sidebar: 'auto',
+  sidebar: [
+    { text: 'vLLM: 高吞吐量大语言模型推理系统剖析', link: '/dl_llm/vllm-anatomy/' },
+    {
+      text: 'CMU 10-414 Deep Learning Systems', link: '/csdiy/10-414/',
+      items: [
+        { text: 'Homework笔记', link: '/csdiy/10-414-homework/' },
+        { text: '课程笔记', link: '/csdiy/10-414-notes/' },
+      ]
+    },
+  ],
 })
 
 const tools = defineCollection({
