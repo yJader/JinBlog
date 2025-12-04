@@ -19,6 +19,10 @@ export default defineUserConfig({
   title: 'JinBlog',
   description: '走在未知的道路上, 不许停也不能回头',
 
+  pagePatterns: [
+    '!docs/backend/**', // 排除 backend 目录
+  ],
+
   head: [
     // 配置站点图标
     // ['link', { rel: 'icon', type: 'image/png', href: 'https://theme-plume.vuejs.press/favicon-32x32.png' }],
