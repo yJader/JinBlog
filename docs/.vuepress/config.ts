@@ -177,4 +177,45 @@ export default defineUserConfig({
     //   locale: '/',    // 默认仅为主语言生成 llms 友好内容
     // }
   }),
+
+  // 核心修复代码：扩展 Markdown 配置
+  extendsMarkdown: (md) => {
+    md.use((md) => {
+      md.core.ruler.push('fix_all_relative_paths', (state) => {
+        state.tokens.forEach((token) => {
+          // 1. 处理 Markdown 标准图片语法 ![alt](url)
+          if (token.type === 'inline' && token.children) {
+            token.children.forEach((child) => {
+              if (child.type === 'image') {
+                const src = child.attrGet('src');
+                // 判断逻辑：如果不以 / (绝对路径), . (相对路径), @ (别名), http (网络图) 开头
+                if (src &&
+                  !src.startsWith('/') &&
+                  !src.startsWith('.') &&
+                  !src.startsWith('@') &&
+                  !src.startsWith('http')) {
+                  child.attrSet('src', './' + src);
+                }
+              }
+              // 2. 处理行内 HTML <img> 标签
+              if (child.type === 'html_inline') {
+                child.content = replaceImgSrc(child.content);
+              }
+            });
+          }
+
+          // 3. 处理块级 HTML <img> 标签
+          if (token.type === 'html_block') {
+            token.content = replaceImgSrc(token.content);
+          }
+        });
+      });
+    });
+  },
 })
+
+// 辅助函数：正则替换 src="..."
+function replaceImgSrc(content) {
+  // 正则含义：匹配 src=" 开头，且后续内容不是 / . @ http 开头的字符串
+  return content.replace(/src="(?!\/|\.|@|http)([^"]*)"/g, 'src="./$1"');
+}
