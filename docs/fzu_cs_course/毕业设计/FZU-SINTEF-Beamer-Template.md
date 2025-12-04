@@ -1,7 +1,7 @@
 ---
 title: FZU-SINTEF-Beamer-Template
 createTime: 2025/10/16 09:06:27
-permalink: /fzu_cs_course/7nkcstu2/
+permalink: /fzu_cs_course/FZU-SINTEF-Beamer-Template/
 ---
 <!-- markdownlint-disable MD033 -->
 # 基于sintef主题的福州大学LaTeX幻灯片模板 (FZU-SINTEF-Beamer-Template)

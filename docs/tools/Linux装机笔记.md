@@ -5,7 +5,7 @@ date:
 comments: true
 title: Linux装机笔记
 createTime: 2024/10/18 15:07:57
-permalink: /tools/6vsnqhkg/
+permalink: /tools/linux-install/
 ---
 # 装机note
 

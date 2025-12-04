@@ -10,7 +10,7 @@ tags:
   - Systems
 title: Inside vLLM Anatomy of a High-Throughput LLM Inference System
 createTime: 2025/10/18 21:45:21
-permalink: /dl_llm/p6wie8rz/
+permalink: /dl_llm/vllm-anatomy/
 ---
 
 # vLLM 深入研究：一个高吞吐量 LLM 推理系统的剖析

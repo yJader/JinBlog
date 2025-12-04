@@ -1,7 +1,7 @@
 ---
 title: FZU-Undergraduate-Thesis
 createTime: 2025/05/27 21:51:12
-permalink: /fzu_cs_course/7xo99t9w/
+permalink: /fzu_cs_course/FZU-Undergraduate-Thesis/
 ---
 # 福州大学本科生毕业论文 LaTeX 模板
 >

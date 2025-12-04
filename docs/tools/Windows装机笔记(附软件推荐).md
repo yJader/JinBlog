@@ -5,7 +5,7 @@ date:
 comments: true
 title: Windows装机笔记(附软件推荐)
 createTime: 2025/04/04 19:40:59
-permalink: /tools/mh33utfk/
+permalink: /tools/windows-install/
 ---
 
 

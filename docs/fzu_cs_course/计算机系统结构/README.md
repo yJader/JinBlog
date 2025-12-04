@@ -1,7 +1,7 @@
 ---
-title: 构
+title: 福州大学计算机系统结构 课程笔记
 createTime: 2024/06/30 18:34:22
-permalink: /fzu_cs_course/877dbwzy/
+permalink: /fzu_cs_course/computer-system-architecture/
 ---
 ## 福州大学计算机系统结构 课程笔记
 

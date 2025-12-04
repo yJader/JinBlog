@@ -1,7 +1,7 @@
 ---
 title: "CMU 10-414/714: Deep Learning Systems"
 createTime: 2025/09/23 16:59:04
-permalink: /csdiy/7ghbptb7/
+permalink: /csdiy/10-414/
 ---
 # CMU 10-414/714: Deep Learning Systems
 
