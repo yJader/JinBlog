@@ -1,3 +1,8 @@
+---
+title: "CMU 10-414/714: Deep Learning Systems"
+createTime: 2025/09/23 16:59:04
+permalink: /csdiy/10-414/
+---
 # CMU 10-414/714: Deep Learning Systems
 
 [CMU 10-414/714: Deep Learning Systems - CS自学指南](https://csdiy.wiki/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%B3%BB%E7%BB%9F/CMU10-414/)

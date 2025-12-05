@@ -1,10 +1,13 @@
 ---
 date:
-  created: 2024-04-04
-  updated: 2024-04-04
+  created: 2024-04-04T00:00:00.000Z
+  updated: 2024-04-04T00:00:00.000Z
 categories:
   - 踩坑记录
-comments: true 
+comments: true
+title: mkdocs踩坑记录
+createTime: 2024/06/30 18:34:21
+permalink: /blog/eaq3vgce/
 ---
 # mkdocs踩坑记录
 

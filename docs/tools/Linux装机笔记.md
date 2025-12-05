@@ -1,8 +1,11 @@
 ---
 date:
-  created: 2024-05-22
-  updated: 2025-08-30
-comments: true 
+  created: 2024-05-22T00:00:00.000Z
+  updated: 2025-08-30T00:00:00.000Z
+comments: true
+title: Linux装机笔记
+createTime: 2024/10/18 15:07:57
+permalink: /tools/linux-install/
 ---
 # 装机note
 

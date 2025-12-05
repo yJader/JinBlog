@@ -1,8 +1,11 @@
 ---
 date:
-  created: 2024-09-25
-  updated: 2025-11-28
-comments: true 
+  created: 2024-09-25T00:00:00.000Z
+  updated: 2025-11-28T00:00:00.000Z
+comments: true
+title: Windows装机笔记(附软件推荐)
+createTime: 2025/04/04 19:40:59
+permalink: /tools/windows-install/
 ---
 
 

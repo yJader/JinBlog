@@ -1,3 +1,27 @@
+---
+pageLayout: home
+externalLinkIcon: false
+config:
+  -
+    type: hero
+    full: true
+    forceDark: true
+    effect: tint-plate
+    hero:
+      name: Jin Blog
+      tagline: 亦瑾的个人博客
+      text: 走在未知的道路上，不许停也不能回头
+      actions:
+        -
+          theme: brand
+          text: 博客
+          link: /blog/posts/
+        -
+          theme: alt
+          text: Github →
+          link: https://github.com/yJader/JinBlog
+---
+
 # Welcome to Jin blog
 
 > 走在未知的道路上，不许停也不能回头

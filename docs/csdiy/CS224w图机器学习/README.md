@@ -1,6 +1,12 @@
+---
+title: CS224W 图机器学习
+createTime: 2025/03/14 15:49:50
+permalink: /csdiy/cs224w/
+---
 # CS224W 图机器学习笔记
 
 **课程主页**: <https://web.stanford.edu/class/cs224w>
+
 **笔记原文**: <https://archives.leni.sh/stanford/CS224w.pdf> or [CS224w Notes](./CS224w.pdf)
 
 **参考资料**:

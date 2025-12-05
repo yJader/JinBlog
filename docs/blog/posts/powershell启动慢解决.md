@@ -1,10 +1,13 @@
 ---
 date:
-  created: 2025-10-01
-  updated: 2025-10-01
+  created: 2025-10-01T00:00:00.000Z
+  updated: 2025-10-01T00:00:00.000Z
 categories:
   - 踩坑记录
-comments: true 
+comments: true
+title: powershell启动慢解决
+createTime: 2025/12/05 15:54:53
+permalink: /blog/posts/xe7h3rou/
 ---
 
 # PowerShell 启动慢解决
