@@ -58,36 +58,52 @@ nav:
                   - 人机交互:
                             - "人机交互": fzu_cs_course/人机交互/复习课件 MD Ver.md
                             - "人机交互考点": fzu_cs_course/人机交互/缩减版.md
+                  - 毕业设计:
+                            - "毕业设计要求整理": fzu_cs_course/毕业设计/毕设要求整理.md
+                            - "FZU-Undergraduate-Thesis": fzu_cs_course/毕业设计/FZU-Undergraduate-Thesis.md
+                            - "FZU-SINTEF-Beamer-Template": fzu_cs_course/毕业设计/FZU-SINTEF-Beamer-Template.md
+        - DL-LLM:
+                  - 博客学习:
+                            - vLLM深入研究：一个高吞吐量 LLM 推理系统的剖析: dl_llm/Inside vLLM Anatomy of a High-Throughput LLM Inference System.md
+                  - "CMU10-414/714: Deep Learning Systems":
+                            - csdiy/CMU 10-414 Deep Learning Systems/README.md
+                            - "Course Notes": csdiy/CMU 10-414 Deep Learning Systems/10-414_深度学习系统课程笔记.md
+                            - "Homework Notes": csdiy/CMU 10-414 Deep Learning Systems/10-414 Homework笔记.md
         - CSDIY公开课:
+                  - "CMU10-414/714: Deep Learning Systems":
+                            - csdiy/CMU 10-414 Deep Learning Systems/README.md
+                            - "Course Notes": csdiy/CMU 10-414 Deep Learning Systems/10-414_深度学习系统课程笔记.md
+                            - "Homework Notes": csdiy/CMU 10-414 Deep Learning Systems/10-414 Homework笔记.md
                   - CS224W图机器学习:
                             - csdiy/CS224w图机器学习/README.md
                             - "CS224w Notes": csdiy/CS224w图机器学习/CS224w.pdf
                             - "CS224w 图机器学习笔记": csdiy/CS224w图机器学习/CS224W 图机器学习笔记.md
-        - 后端开发:
-                  - Java:
-                            - "java类基础": backend/java/java类基础.md
-                            - "继承封装多态": backend/java/继承封装多态.md
-                            - "10面向对象高级": backend/java/10面向对象高级.md
-                            - "11枚举和注解": backend/java/11枚举和注解.md
-                            - "12异常": backend/java/12异常Exception.md
-                            - "13常用类": backend/java/13常用类.md
-                            - "14集合": backend/java/14集合.md
-                            - "15泛型": backend/java/15泛型.md
-                            - "16坦克大战_part1": backend/java/16坦克大战_part1.md
-                            - "17多线程基础": backend/java/17多线程基础.md
-                            - "18坦克大战_part2": backend/java/18坦克大战_part2.md
-                            - "19IO流": backend/java/19IO流.md
-                            - "20网络编程": backend/java/20网络编程.md
-                            - "21反射与动态代理": backend/java/21反射与动态代理.md
-                            - "22Java8新特性": backend/java/22Java8新特性.md
-                            - "杂项": backend/java/杂项.md
+        # - 后端开发:
+        #           - Java:
+        #                     - "java类基础": backend/java/java类基础.md
+        #                     - "继承封装多态": backend/java/继承封装多态.md
+        #                     - "10面向对象高级": backend/java/10面向对象高级.md
+        #                     - "11枚举和注解": backend/java/11枚举和注解.md
+        #                     - "12异常": backend/java/12异常Exception.md
+        #                     - "13常用类": backend/java/13常用类.md
+        #                     - "14集合": backend/java/14集合.md
+        #                     - "15泛型": backend/java/15泛型.md
+        #                     - "16坦克大战_part1": backend/java/16坦克大战_part1.md
+        #                     - "17多线程基础": backend/java/17多线程基础.md
+        #                     - "18坦克大战_part2": backend/java/18坦克大战_part2.md
+        #                     - "19IO流": backend/java/19IO流.md
+        #                     - "20网络编程": backend/java/20网络编程.md
+        #                     - "21反射与动态代理": backend/java/21反射与动态代理.md
+        #                     - "22Java8新特性": backend/java/22Java8新特性.md
+        #                     - "杂项": backend/java/杂项.md
         - 工具分享:
                   - "Windows装机笔记(附软件推荐)": tools/Windows装机笔记(附软件推荐).md
                   - "Linux装机笔记": tools/Linux装机笔记.md
-        - 博客随笔:
+        - Blog:
                   - blog/index.md
 
 theme:
+        logo: "assests/jade_light.svg"
         font:
                 text: Roboto
                 code: Roboto Mono
@@ -190,8 +206,8 @@ plugins:
         - blog:
                   blog_toc: true
                   post_excerpt: required
-                  archive: false
-                  categories_name: tags
+                  #   archive: false
+                  #   categories_name: tags
                   pagination_per_page: 5
                   post_url_format: "{slug}" # 博客url格式
 
