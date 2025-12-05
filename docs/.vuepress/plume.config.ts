@@ -18,7 +18,7 @@ import collections from './collections'
  * @see https://theme-plume.vuejs.press/config/theme/
  */
 export default defineThemeConfig({
-  logo: '/assests/jade_light.svg',
+  logo: '/jade_light.svg',
 
   appearance: true,  // 默认为用户配色(浅色/深色)
 
@@ -49,7 +49,7 @@ export default defineThemeConfig({
    * @see https://theme-plume.vuejs.press/config/theme/#profile
    */
   profile: {
-    avatar: '/assests/yanami_anna.jpg',
+    avatar: '/yanami_anna.jpg',
     name: '亦瑾',
     description: '走在未知的道路上</br>不许停也不能回头',
     circle: true,
