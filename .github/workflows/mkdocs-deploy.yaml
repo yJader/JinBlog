@@ -1,8 +1,8 @@
-name: ci on Github Pages
+name: Deploy MkDocs Site to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - mkdocs
   workflow_dispatch:
 
 jobs:
