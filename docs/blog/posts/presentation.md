@@ -6,7 +6,7 @@ description: 使用纯文本制作演示文稿的优缺点及工具推荐
 categories:
   - 杂项
 comments: true
-title: presentation
+title: Plain Text is All You Need (for Presentations)
 createTime: 2025/06/09 15:14:03
 permalink: /blog/g70sczk7/
 ---

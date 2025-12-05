@@ -5,7 +5,7 @@ date:
 categories:
   - 踩坑记录
 comments: true
-title: powershell启动慢解决
+title: Powershell启动慢解决
 createTime: 2025/12/05 15:54:53
 permalink: /blog/posts/xe7h3rou/
 ---
