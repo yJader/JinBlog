@@ -11,6 +11,8 @@ permalink: /blog/eaq3vgce/
 ---
 # mkdocs踩坑记录
 
+# MkDocs踩坑记录
+
 ## Latex
 
 [MathJax(数学) - Material for MkDocs (wdk-docs.github.io)](https://wdk-docs.github.io/mkdocs-material-docs/reference/mathjax/)
