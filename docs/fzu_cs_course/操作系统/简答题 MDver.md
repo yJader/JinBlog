@@ -85,7 +85,7 @@ permalink: /fzu_cs_course/operating-systems/short-answers/
      - **结构性**：每个进程都有一个PCB（进程控制块），进程由程序段，数据段，PCB组成
 
 4. 画出进程基本状态转换关系图：
-   <img src="./简答题 mdver.assets/image-20231215002330503.png" alt="image-20231215002330503" style="zoom:50%;" />
+   <img src="./简答题 MDver.assets/image-20231215002330503.png" alt="image-20231215002330503" style="zoom:50%;" />
 
 5. 就绪. 执行和等待三种基本状态。
 
