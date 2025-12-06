@@ -16,7 +16,8 @@ permalink: /fzu_cs_course/
 bug记录:
 
 - $\LaTeX$和部分html特殊格式可能存在渲染bug
-- 因mkdocs框架问题, 页内标题跳转中文标题失效
+- ~~因mkdocs框架问题, 页内标题跳转中文标题失效~~
+- 迁移到vuepress后, 部分页面打开会出现空白, 原地刷新一下即可
 
 如果这些问题影响了你的体验, 可以clone后用本地编辑器打开QAQ
 
