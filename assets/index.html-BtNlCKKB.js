@@ -1,0 +1,1 @@
+import{_ as t,c as e,o}from"./app-AuyBpmKP.js";const a={};function r(n,s){return o(),e("div")}const l=t(a,[["render",r]]),i=JSON.parse('{"path":"/blog/posts/","title":"Blog","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"Blog","draft":true},"readingTime":{"minutes":0,"words":0},"git":{},"filePathRelative":null,"headers":[],"type":"posts"}');export{l as comp,i as data};
