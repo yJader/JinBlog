@@ -1,0 +1,56 @@
+/* docs/.vuepress/styles/index.css */
+
+/* --- 1. Nijika Ijichi (伊地知虹夏) - 黄色 --- */
+/* 这里的 :nth-child(1) 指的是第一个按钮 */
+.vp-home-hero .actions .action .vp-button:nth-child(1) {
+    background-color: #E6D47B !important;
+    border-color: #E6D47B !important;
+    color: #4a4a4a !important;
+    /* 浅底深字 */
+    font-weight: 600;
+}
+
+/* 悬停变色 */
+.vp-home-hero .actions .action .vp-button:nth-child(1):hover {
+    background-color: #ebdfa0 !important;
+    border-color: #ebdfa0 !important;
+}
+
+/* --- 2. Ikuyo Kita (喜多郁代) - 红色 --- */
+.vp-home-hero .actions .action .vp-button:nth-child(2) {
+    background-color: #D0574E !important;
+    border-color: #D0574E !important;
+    color: #ffffff !important;
+}
+
+.vp-home-hero .actions .action .vp-button:nth-child(2):hover {
+    background-color: #dd7a73 !important;
+    border-color: #dd7a73 !important;
+}
+
+/* --- 3. Ryo Yamada (山田凉) - 蓝色 --- */
+.vp-home-hero .actions .action .vp-button:nth-child(3) {
+    background-color: #4061A0 !important;
+    border-color: #4061A0 !important;
+    color: #ffffff !important;
+}
+
+.vp-home-hero .actions .action .vp-button:nth-child(3):hover {
+    background-color: #6380b8 !important;
+    border-color: #6380b8 !important;
+}
+
+/* --- 4. Hitori Gotoh (Bocchi) - 粉色 --- */
+/* 只有当你在 frontmatter 里加了第 4 个按钮时才会生效 */
+.vp-home-hero .actions .action .vp-button:nth-child(4) {
+    background-color: #EEB8C4 !important;
+    border-color: #EEB8C4 !important;
+    color: #4a4a4a !important;
+    /* 浅底深字 */
+    font-weight: 600;
+}
+
+.vp-home-hero .actions .action .vp-button:nth-child(4):hover {
+    background-color: #f5ccd5 !important;
+    border-color: #f5ccd5 !important;
+}
