@@ -157,6 +157,7 @@ const dlLLM = defineCollection({
   title: 'DL-LLM',
   sidebar: [
     { text: 'vLLM: 高吞吐量大语言模型推理系统剖析', link: '/dl_llm/vllm-anatomy/' },
+    { text: 'TensorRT-LLM：在 NVL72 上扩展视频生成', link: '/dl_llm/tensorrt-llm-scaling-video-generation-nvl72/' },
     {
       text: 'CMU 10-414 Deep Learning Systems', link: '/csdiy/10-414/',
       items: [
