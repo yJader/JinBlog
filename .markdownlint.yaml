@@ -1,0 +1,4 @@
+MD033:
+  allowed_elements:
+    - br
+MD025: false
