@@ -54,3 +54,10 @@
     background-color: #f5ccd5 !important;
     border-color: #f5ccd5 !important;
 }
+
+/* Mermaid 图表按正文宽度缩放，避免宽图以原始尺寸撑开页面。 */
+.mermaid-wrapper .mermaid-content svg {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}

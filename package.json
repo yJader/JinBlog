@@ -16,6 +16,7 @@
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.26",
     "http-server": "^14.1.1",
+    "mermaid": "^11.17.2",
     "typescript": "^5.9.3",
     "vue": "^3.5.25",
     "vuepress": "2.0.0-rc.26",
