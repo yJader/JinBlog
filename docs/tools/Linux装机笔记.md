@@ -13,6 +13,45 @@ permalink: /tools/linux-install/
 
 [TOC]
 
+## My Cheat Sheet
+
+```bash
+# 谁不喜欢自动配置git
+(type -p wget >/dev/null || (sudo apt update && sudo apt install wget -y)) \
+	&& sudo mkdir -p -m 755 /etc/apt/keyrings \
+	&& out=$(mktemp) && wget -nv -O$out https://cli.github.com/packages/githubcli-archive-keyring.gpg \
+	&& cat $out | sudo tee /etc/apt/keyrings/githubcli-archive-keyring.gpg > /dev/null \
+	&& sudo chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg \
+	&& sudo mkdir -p -m 755 /etc/apt/sources.list.d \
+	&& echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
+	&& sudo apt update \
+	&& sudo apt install gh -y
+
+sudo apt install gh
+gh auth login
+
+# 先通过chezmoi安装zsh
+# TODO 将其他安装环节也通过chezmoi run_once脚本实现
+sh -c "$(curl -fsLS get.chezmoi.io)"
+mkdir -p ~/.local/bin
+mv ./bin/chezmoi ~/.local/bin/
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
+
+~/.local/bin/chezmoi init yJader/dotfiles
+~/.local/bin/chezmoi apply
+
+# chsh -s /bin/zsh # 不够通用
+sudo usermod -s "$(command -v zsh)" $USER
+```
+
+```bash
+curl -fsSL https://chatgpt.com/codex/install.sh | sh
+```
+
+详细说明
+
+- [chezmoi安装zsh](#备份配置-chezmoi)
+
 ## 基本环境配置
 
 ### 换源
@@ -404,6 +443,34 @@ chezmoi apply
  && sudo apt install gh -y
 ```
 
+## Agent
+
+### codex
+
+```bash
+curl -fsSL https://chatgpt.com/codex/install.sh | sh
+
+# 或者npm, 但是对daemon支持不好
+npm i -g @openai/codex
+```
+
+如果服务器没有node...
+
+```bash
+# nvm 安装
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
+# 安装 nvm 后重新打开终端，再执行以下命令
+nvm install 24
+nvm use 24
+npm i -g @openai/codex
+```
+
+### claude code
+
+```bash
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
 ## Conda
 
 > 先放一个官方文档: [Installing Miniconda - Anaconda](https://www.anaconda.com/docs/getting-started/miniconda/install), 建议先看官方文档, 以下为偷懒用摘抄
@@ -488,6 +555,10 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
    ```
 
    This command downloads a test image and runs it in a container. When the container runs, it prints a confirmation message and exits.
+
+### docker镜像
+
+[境内 Docker 镜像状态监控](https://status.anye.xyz/)
 
 ## 远程桌面
 
