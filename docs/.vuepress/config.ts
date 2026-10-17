@@ -46,7 +46,20 @@ export default defineUserConfig({
     /* 页内信息 */
     editLink: true,
     lastUpdated: {},
-    contributors: true,
+    contributors: {
+      avatar: true,
+      info: [{
+        // 将历史提交中使用过的多个 Git name / email 统一为同一个贡献者
+        username: 'yJader',
+        name: 'yJader',
+        alias: ['yJader_xx', 'yJader_r9p', 'yJader@mba', 'Jader', '亦瑾'],
+        email: 'yjader@foxmail.com',
+        emailAlias: [
+          'yj1425840290@gmail.com',
+          '76905040+yJader@users.noreply.github.com',
+        ],
+      }],
+    },
     // changelog: false,
 
 
